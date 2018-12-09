@@ -14,15 +14,21 @@
 - transform: rotate(-45deg)
 - box-shadow: (offset-x, offset-y, blur-radius, spread-radius, color)
 - 
-- #rect:hover {
+- .example:hover {
     animation-name: rainbow;
     animation-duration: 4s;
-    animation-fill-mode: forwards; -to keep animation from looping
+    animation-fill-mode: forwards; -when hovering will stay at 100%
+    animation-iteration-count: infinite; -how many times it loops
   }
   
+  #example {
+    animation-timing-function: ease-out;
+  }
+
   @keyframes rainbow {
     0% {
       background-color: blue;
+      transform: scale(1);
     }
     50% {
       background-color: green;
@@ -31,3 +37,5 @@
       background-color: yellow;
     }
   }
+
+
