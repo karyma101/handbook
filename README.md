@@ -13,3 +13,21 @@
 - transform: skewX(value)
 - transform: rotate(-45deg)
 - box-shadow: (offset-x, offset-y, blur-radius, spread-radius, color)
+- 
+- #rect:hover {
+    animation-name: rainbow;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; -to keep animation from looping
+  }
+  
+  @keyframes rainbow {
+    0% {
+      background-color: blue;
+    }
+    50% {
+      background-color: green;
+    }
+    100% {
+      background-color: yellow;
+    }
+  }
