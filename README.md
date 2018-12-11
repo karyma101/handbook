@@ -8,13 +8,12 @@
 
 ## HTML
 - Semantic tags
-- <audio controls>
-- <figure>, <figcaption>
-- <fieldset>, <legend> - usually the question, for accessiblity
-- <input type="date">
-- <time datetime="2016-09-15"> - for accessibility
-- <sup> -superscript
-- 
+<!-- - <audio controls> -->
+<!-- - <figure>, <figcaption> -->
+<!-- - <fieldset>, <legend> - usually the question, for accessiblity -->
+<!-- - <input type="date"> -->
+<!-- - <time datetime="2016-09-15"> - for accessibility -->
+<!-- - <sup> -superscript -->
 
 ## CSS
 - background: repeat-linear-gradient(gradient_direction, color 1, color 1_stop, color 2, color 2_stop)
