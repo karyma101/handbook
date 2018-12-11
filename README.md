@@ -8,12 +8,19 @@
 
 ## HTML
 - Semantic tags
-<!-- - <audio controls> -->
-<!-- - <figure>, <figcaption> -->
-<!-- - <fieldset>, <legend> - usually the question, for accessiblity -->
-<!-- - <input type="date"> -->
-<!-- - <time datetime="2016-09-15"> - for accessibility -->
-<!-- - <sup> -superscript -->
+- No Anchor tags around click here
+
+### Tags
+- audio controls : creates audio player
+- figure, figcaption 
+- fieldset, legend : usually for the question of the radio form
+- input type="date" : date picker
+- time datetime="2016-09-15" : accessibility
+- sup : superscript
+
+### Attributes
+- accesskey="c" : usually for keyboard only users
+- tabindex="0" : enables :focus in css and able to tab to element. tabindex=(1, 2,..., 0) order
 
 ## CSS
 - background: repeat-linear-gradient(gradient_direction, color 1, color 1_stop, color 2, color 2_stop)
@@ -55,3 +62,7 @@
     top: auto;
     overflow: hidden;
   }
+
+## Sass
+- Syntactically Awesome Stylesheet
+- Scripting Language
