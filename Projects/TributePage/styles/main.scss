@@ -1,3 +1,38 @@
-h1 {
-  font-size: 100px;
+$primary-color: #231958;
+$secondary-color: #ECC62D;
+$primary-font: Helvetica;
+$secondary-font: Arial;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $primary-font;
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+header {
+  color: $secondary-color;
+}
+
+figure {
+  width: 100vw;
+}
+
+#image {
+  width: 100%;
+}
+
+#img-caption {
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.center {
+  text-align: center;
 }

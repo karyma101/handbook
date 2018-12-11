@@ -66,3 +66,6 @@
 ## Sass
 - Syntactically Awesome Stylesheet
 - Scripting Language
+- sass --watch (input.scss) (output.css)
+- sass --watch (app/sass:public/stylesheets) : watch all files in the app/sass folder for changes and compile css to the public/stylesheets folder
+- 
