@@ -12,6 +12,8 @@
 - <figure>, <figcaption>
 - <fieldset>, <legend> - usually the question, for accessiblity
 - <input type="date">
+- <time datetime="2016-09-15"> - for accessibility
+- <sup> -superscript
 - 
 
 ## CSS
@@ -38,4 +40,13 @@
     100% {
       background-color: yellow;
     }
+  }
+
+  .sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
   }
