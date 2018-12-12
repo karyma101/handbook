@@ -1,7 +1,6 @@
 $primary-color: #231958;
 $secondary-color: #ECC62D;
-$primary-font: Helvetica;
-$secondary-font: Arial;
+$primary-font: Verdana;
 
 * {
   margin: 0;
@@ -14,23 +13,59 @@ body {
   color: $secondary-color;
 }
 
-header {
-  color: $secondary-color;
-}
-
-figure {
-  width: 100vw;
-}
-
-#image {
+nav {
+  background-color: $primary-color;
+  padding: 10px;
   width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 2;
 }
 
-#img-caption {
+header {
+  overflow: hidden;
+
+  #img-div {
+    display: inline-block;
+    position: relative;
+    right: -50%;
+  }
+
+  #image {
+    position: relative;
+    left: -60%;
+  }
+
+  #img-caption {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+h2 {
+  margin: 20px 0;
 }
 
 ul {
-  padding-left: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  background-color: $secondary-color;
+  color: $primary-color;
+  height: 150px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:visited {
+  color: $secondary-color;
 }
 
 .center {
