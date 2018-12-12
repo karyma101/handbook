@@ -38,17 +38,15 @@ header {
 
   #img-caption {
     position: relative;
-    z-index: 2;
   }
 }
 
 h2 {
-  margin: 20px 0;
+  margin: 20px 30px;
 }
 
 ul {
-  margin-top: 10px;
-  margin-left: 20px;
+  margin: 10px 60px;
   li {
     margin-bottom: 20px;
   }
@@ -62,6 +60,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  color: $secondary-color;
 }
 
 a:visited {
