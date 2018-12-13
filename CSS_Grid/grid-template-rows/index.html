@@ -20,9 +20,12 @@
     background: LightGray;
     display: grid;
     grid-template-columns: 100px 100px 100px;
-    /* 
-    This creates 3 columns 100px each column 
-    grid-template-columns: repeat(3, 100px) same as above.
+    grid-template-rows: 50px 100px;
+    /* Creates 2 rows, first row 50px, second row 
+    grid-template-rows: repeat(50px 100px);
+
+    grid-template-columns: 100px minmax(50px, 200px);
+    In the code above, grid-template-columns is set to create two columns; the first is 100px wide, and the second has the minimum width of 50px and the maximum width of 200px.
     */
   }
 </style>

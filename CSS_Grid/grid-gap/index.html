@@ -16,14 +16,16 @@
   
   .container {
     font-size: 40px;
+    min-height: 300px;
     width: 100%;
     background: LightGray;
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    /* 
-    This creates 3 columns 100px each column 
-    grid-template-columns: repeat(3, 100px) same as above.
-    */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* add your code below this line */
+    grid-gap: 10px 20px;
+    /* Gap between rows and columns grip-gap: (grid-row-gap) (grid-column-gap);*/
+    /* add your code above this line */
   }
 </style>
   
