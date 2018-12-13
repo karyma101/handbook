@@ -23,6 +23,11 @@
 - tabindex="0" : enables :focus in css and able to tab to element. tabindex=(1, 2,..., 0) order
 
 ## CSS
+- align-self - allows us to adjust each item's alignment individually
+- flex: (flex-grow) (flex-shrink) (flex-basis)
+- max-width: 100%
+- vmin: 70vmin would be 70% of the viewport's smaller dimension (height vs. width).
+- vmax: 100vmax would be 100% of the viewport's bigger dimension (height vs. width).
 - background: repeat-linear-gradient(gradient_direction, color 1, color 1_stop, color 2, color 2_stop)
 - background: linear-gradient(gradient_direction, color 1, color 2, ...)
 - transform: scale(2)
@@ -68,4 +73,3 @@
 - Scripting Language
 - sass --watch (input.scss) (output.css)
 - sass --watch (app/sass:public/stylesheets) : watch all files in the app/sass folder for changes and compile css to the public/stylesheets folder
-- 
