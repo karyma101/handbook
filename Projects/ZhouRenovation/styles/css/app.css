@@ -1,0 +1,10 @@
+.list {
+  list-style-type: none;
+  padding: 0;
+  marign: 0;
+}
+.list__item {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=app.css.map */
