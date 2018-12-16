@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Allura');
+
+$primaryColor: #464545;
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    flex: 2;
+    height: 100vh;
+  }
+
+  &__right {
+    flex: 5;
+    height: 100vh;
+    background-color: black;
+  }
+}
+
+.nav {
+  border: 1px solid black;
+  width: 80%;
+  &__item {
+    color: black;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    border: 1px solid grey;
+    display: block;
+    text-align: center;
+    padding: 5%;
+  }
+
+  &__item:visited {
+    color: black;
+  }
+
+  &__item:hover {
+    background-color: $primaryColor;
+    color: white;
+  }
+}
+
+h1 {
+  
+}
+
+
+#showcase {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+// @media () {
+
+// }
