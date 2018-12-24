@@ -1,0 +1,17 @@
+
+$primaryColor: #ebe9e7;
+
+a:hover {
+  text-decoration: none;
+}
+
+
+.nav-link {
+
+  &:hover {
+    background-color: $primaryColor;
+  }
+}
+
+
+

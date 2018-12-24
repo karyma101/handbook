@@ -1,12 +1,9 @@
-body {
-  margin: 0;
-  padding: 0;
+a:hover {
+  text-decoration: none;
 }
 
-img {
-  width: 20rem;
+.nav-link:hover {
+  background-color: #ebe9e7;
 }
 
-a {
-  display: block;
-}
+/*# sourceMappingURL=App.css.map */

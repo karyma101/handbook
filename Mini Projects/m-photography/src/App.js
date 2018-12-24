@@ -6,41 +6,55 @@ import { Home, About, Photography, Contact } from './components'
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div class="left">
-          <div class="brand">
-            <img src="./img/logo.jpg" alt=""/>
-            <h1 class="brand_title">M. Photography</h1>
-          </div>
+      <div>
+        <nav className="navbar navbar-expand-md navbar-light bg-light">
+          <span className="navbar-brand">
+            {/* <img src="./img/logo.jpg" width="40" height="40" class="d-inline-block align-top" alt=""/> */}
+            <span>M. Photography</span>
+          </span>
 
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/photography">Photography</Link>
-            <Link to="/contact">Contact</Link>
-          </nav>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+        <div className = "collapse navbar-collapse d-md-flex flex-md-row-reverse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link to="/"><span className="nav-link active">Home</span></Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about"><span className="nav-link active">About</span></Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/photography"><span className="nav-link active">Photography</span></Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact"><span className="nav-link active">Contact</span></Link>
+            </li>
+          </ul>
         </div>
+        </nav>
 
-        <div class="right">
+        <div>
           <Switch>
             <Route
               path="/" exact
-              component={<Home />}
+              component={Home}
             ></Route>
 
             <Route
               path="/about"
-              component={<About />}
+              component={About}
             ></Route>
 
             <Route
               path="/photography"
-              component={<Photography />}
+              component={Photography}
             ></Route>
 
             <Route
               path="/contact" 
-              component={<Contact />}
+              component={Contact}
             ></Route>
           </Switch>
         </div>
