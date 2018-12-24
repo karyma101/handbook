@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-md navbar-light bg-light">
+        <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top ">
           <span className="navbar-brand">
             {/* <img src="./img/logo.jpg" width="40" height="40" class="d-inline-block align-top" alt=""/> */}
             <span>M. Photography</span>
