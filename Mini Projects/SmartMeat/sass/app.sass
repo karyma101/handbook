@@ -1,17 +1,33 @@
-$primaryColor: #80b641
+$primaryColor: #2A281C
 $secondaryColor: #6b4b35
 
 *
   box-sizing: border-box
 
+html,body 
+  color: $secondaryColor
+  overflow-x: hidden
+
+
 header
   height: 100vh
-  z-index: 0
-  background-color: pink
+  background: url('../src/showcase.jpg') center fixed
 
-#showcase
+.secondary-section
+  color: white
+  background-color: $primaryColor
+
+#showcase-overlay
   position: absolute
   top: 0
   left: 0
+  height: 100%
+  width: 100%
+  background-color: white
+  opacity: 0.08
   z-index: 1
-  background: url('../src/showcase.jpg') center cover
+
+#showcase-info
+  color: white
+  height: 100%
+  width: 100%
