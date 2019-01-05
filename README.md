@@ -29,6 +29,11 @@
 - vmin: 70vmin would be 70% of the viewport's smaller dimension (height vs. width).
 - vmax: 100vmax would be 100% of the viewport's bigger dimension (height vs. width).
 - background: repeat-linear-gradient(gradient_direction, color 1, color 1_stop, color 2, color 2_stop)
+- ease: the changes starts slow then go faster then finishes slow.
+- linear: the change occurs at the same rate.
+- ease-in: the change starts slow then go faster before the end.
+- ease-out: the changes starts fast then slows down before the end.
+- ease-in-out: the change starts slow then go faster then finishes slow.
 - background: linear-gradient(gradient_direction, color 1, color 2, ...)
 - transform: scale(2)
 - transform: skewX(value)
