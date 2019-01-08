@@ -7,13 +7,15 @@ div {
   height: 150px;
   background-color: red;
   animation-name: moving;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+  /* Animation Fill tells where the animation should start and end */
 }
 
 @keyframes moving{
   0% {
-    transform: translateX(0);
+    transform: translateX(500px);
   }
 
   50% {

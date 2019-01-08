@@ -35,43 +35,13 @@
 - ease-out: the changes starts fast then slows down before the end.
 - ease-in-out: the change starts slow then go faster then finishes slow.
 - background: linear-gradient(gradient_direction, color 1, color 2, ...)
-- transform: scale(2)
-- transform: skewX(value)
-- transform: rotate(-45deg)
+- transform: scale()
+- transform: skew()
+- transform: rotate()
 - box-shadow: (offset-x, offset-y, blur-radius, spread-radius, color)
 - bezier curve (x1, y1, x2, y2)
-- .example:hover {
-    animation-name: rainbow;
-    animation-duration: 4s;
-    animation-fill-mode: forwards; -when hovering will stay at 100%
-    animation-iteration-count: infinite; -how many times it loops
-  }
-  
-  #example {
-    animation-timing-function: ease-out;
-  }
-
-  @keyframes rainbow {
-    0% {
-      background-color: blue;
-      transform: scale(1);
-    }
-    50% {
-      background-color: green;
-    }
-    100% {
-      background-color: yellow;
-    }
-  }
-
-  .sr-only {
-    position: absolute;
-    left: -10000px;
-    width: 1px;
-    height: 1px;
-    top: auto;
-    overflow: hidden;
-  }
+- animation: name duration iteration timing_function direction delay
+  - can be any order except delay must be after duration.
 
 ## Sass
 - Syntactically Awesome Stylesheet

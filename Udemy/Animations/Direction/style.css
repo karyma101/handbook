@@ -9,18 +9,15 @@ div {
   animation-name: moving;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 @keyframes moving{
-  0% {
+  from {
     transform: translateX(0);
   }
 
-  50% {
+  to {
     transform: translateX(1000px);
-  }
-
-  100% {
-    transform: translate(1000px, 500px);
   }
 }
