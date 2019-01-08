@@ -40,6 +40,7 @@
 - transform: rotate(-45deg)
 - box-shadow: (offset-x, offset-y, blur-radius, spread-radius, color)
 - bezier curve (x1, y1, x2, y2)
+- clip-path(x y, x y, x y, x y)
 - .example:hover {
     animation-name: rainbow;
     animation-duration: 4s;
