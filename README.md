@@ -40,8 +40,44 @@
 - transform: rotate()
 - box-shadow: (offset-x, offset-y, blur-radius, spread-radius, color)
 - bezier curve (x1, y1, x2, y2)
+<<<<<<< HEAD
 - animation: name duration iteration timing_function direction delay
   - can be any order except delay must be after duration.
+=======
+- clip-path(x y, x y, x y, x y)
+- .example:hover {
+    animation-name: rainbow;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; -when hovering will stay at 100%
+    animation-iteration-count: infinite; -how many times it loops
+  }
+  
+  #example {
+    animation-timing-function: ease-out;
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-color: blue;
+      transform: scale(1);
+    }
+    50% {
+      background-color: green;
+    }
+    100% {
+      background-color: yellow;
+    }
+  }
+
+  .sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+  }
+>>>>>>> b8790bbad5fc4b3af7473abd9fbc6c6b0d5a9781
 
 ## Sass
 - Syntactically Awesome Stylesheet
