@@ -40,10 +40,6 @@
 - transform: rotate()
 - box-shadow: (offset-x, offset-y, blur-radius, spread-radius, color)
 - bezier curve (x1, y1, x2, y2)
-<<<<<<< HEAD
-- animation: name duration iteration timing_function direction delay
-  - can be any order except delay must be after duration.
-=======
 - clip-path(x y, x y, x y, x y)
 - .example:hover {
     animation-name: rainbow;
@@ -77,7 +73,6 @@
     top: auto;
     overflow: hidden;
   }
->>>>>>> b8790bbad5fc4b3af7473abd9fbc6c6b0d5a9781
 
 ## Sass
 - Syntactically Awesome Stylesheet
