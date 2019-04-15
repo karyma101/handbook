@@ -16,6 +16,21 @@
 
 ### Headless Browser
 
-- Headless Chromium
-- Zombie
-- SlimerJS
+- Web Browsers without a graphical user interface that can be controlled from a command line interface programmatically for the purpose of web page automation (eg. functional testing, scraping, unit testing).
+- Most Common Headless Browsers:
+  - Headless Chromium
+  - Zombie
+  - SlimerJS
+
+### Webviews
+
+- Used by Native OS, in a native application to run a web page.
+- Most Common Solutions for Webview development:
+  - Cordova (native phone/tablet apps)
+  - NW.js (desktop apps)
+  - Electron (desktop apps)
+
+## Native from Web Tech
+
+- Flutter
+- React Native
