@@ -18,9 +18,9 @@
 
 - hides the anything with the type of text
 
-### \$('[href]').hide()
+### \$('[href]').show()
 
-- hides the anything with the attribute of href
+- shows anything with the attribute of href
 
 ### \$('#btn').click(function(){ alert('Button Clicked')})
 
