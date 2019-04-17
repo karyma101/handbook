@@ -63,3 +63,19 @@
 ### \$('input').blur(functino(){})
 
 - When clicked out of input box
+
+### \$('input').keyup(function(e){console.log(e.target.value)})
+
+- Prints out the value
+
+### \$('select#gender').change(function({})
+
+- Whenever the select box changes
+
+### \$('input#name').val();
+
+- Will get you the value of the input
+
+### \$('#form').submit(function(e){ e.preventDefault(); console.log('Submitted')})
+
+- Whenever the form is submitted.
