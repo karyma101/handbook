@@ -1,52 +1,41 @@
-- \$('#btn').click(function(e){ console.log(e)})
-
+- **\$('#btn').click(function(e){ console.log(e)})**
   - shows all events
 
-- \$(document).ready(function(){})
-
+- **\$(document).ready(function(){})**
   - if script tag is placed in the head
 
-### \$('element').css('color', 'red')
+- **\$('element').css('color', 'red')**
+  - changes the css style
 
-- changes the css style
+- **\$('ul li:first')**
+  - :first
+  - :last
+  - :even
+  - :odd
+  - :nth-child(x)
 
-### \$('ul li:first')
+- **\$(':text').hide()**
+  - hides the anything with the type of text
 
-- :first
-- :last
-- :even
-- :odd
-- :nth-child(x)
+- **\$('[href]').show()**
+  - shows anything with the attribute of href
 
-### \$(':text').hide()
+- **\$('p').toggle()**
+  - toggles between hide and show
 
-- hides the anything with the type of text
+- **\$('#btn').click(function(){ alert('Button Clicked')})**
+  - Alert pops up when clicked
 
-### \$('[href]').show()
+- **\$('#btn').on('click', function(){ alert('Button Clicked')})**
+  - Same as above, but more optimized
 
-- shows anything with the attribute of href
+- **\$('#btn').dblclick(function(){ })**
+  - When double clicked
 
-### \$('p').toggle()
-
-- toggles between hide and show
-
-### \$('#btn').click(function(){ alert('Button Clicked')})
-
-- Alert pops up when clicked
-
-### \$('#btn').on('click', function(){ alert('Button Clicked')})
-
-- Same as above, but more optimized
-
-### \$('#btn').dblclick(function(){ })
-
-- When double clicked
-
-### \$('#btn).hover(function(){ })
-
-- Hover is a combination of both:
-  - \$('#btn').on('mouseenter', function(){ })
-  - \$('#btn').on('mouseleave', function(){ })
+- **\$('#btn).hover(function(){ })**
+  - Hover is a combination of both:
+    - \$('#btn').on('mouseenter', function(){ })
+    - \$('#btn').on('mouseleave', function(){ })
 
 ### \$('#btn').on('mouseup', function(){ })
 
