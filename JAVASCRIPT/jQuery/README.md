@@ -2,7 +2,7 @@
 
 - Shows all events
 
-### \$(document).ready(function(){ <code goes here> })
+### \$(document).ready(function(){})
 
 - if script tag is placed in the head
 
@@ -38,11 +38,11 @@
 
 - Same as above, but more optimized
 
-### \$('#btn').dblclick(function(){ <code>})
+### \$('#btn').dblclick(function(){ })
 
 - When double clicked
 
-### \$('#btn).hover(function(){ <code> })
+### \$('#btn).hover(function(){ })
 
 - Hover is a combination of both:
   - \$('#btn').on('mouseenter', function(){ })
