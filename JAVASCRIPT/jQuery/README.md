@@ -112,6 +112,46 @@
 
   - Similar to text but you can add element tags
 
-- **\$('element').addClass('\<li\>list item\<li\>')**
+- **\$('element').append('\<li\>list item\<li\>')**
 
   - Adds inside the element and the very end
+
+- **\$('element').prepend('\<li\>list item\<li\>')**
+
+  - Adds inside the element and the very beginning
+
+- **\$('element').before('\<li\>list item\<li\>')**
+
+  - Adds outside and before the element
+
+- **\$('element').after('\<li\>list item\<li\>')**
+
+  - Adds outside the element and
+
+- **\$('element').appendTo('element')**
+
+- **\$('element').prependTo('element')**
+
+- **\$('element').empty()**
+
+  - Removes everything inside the element
+
+- **\$('element').detach()**
+
+  - Removes the element
+
+- **\$('a').attr('target','blank')**
+
+  - Adds an attribute to element, can also get href by .attr('href')
+
+- **\$('a').removeAttr('target')**
+
+  - Adds removes attribute from element
+
+- **\$('element').wrap('\<h1\>')**
+
+  - Wraps each element with tag
+
+- **\$('element').wrapAll('\<h1\>')**
+
+  - Wraps all element with a single tag
