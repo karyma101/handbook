@@ -1,10 +1,10 @@
-### \$('#btn').click(function(e){ console.log(e)})
+- \$('#btn').click(function(e){ console.log(e)})
 
-- Shows all events
+  - shows all events
 
-### \$(document).ready(function(){})
+- \$(document).ready(function(){})
 
-- if script tag is placed in the head
+  - if script tag is placed in the head
 
 ### \$('element').css('color', 'red')
 
