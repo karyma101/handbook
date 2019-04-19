@@ -37,34 +37,26 @@
     - \$('#btn').on('mouseenter', function(){ })
     - \$('#btn').on('mouseleave', function(){ })
 
-### \$('#btn').on('mouseup', function(){ })
+- **\$('#btn').on('mouseup', function(){ })**
+  - When mouse click is released
 
-- When mouse click is released
+- **\$('#btn').on('mousedown', function(){ })**
+  - When mouse is held down
 
-### \$('#btn').on('mousedown', function(){ })
+- **\$('input').focus(function(){})**
+  - When clicked on input box
 
-- When mouse is held down
+- **\$('input').blur(functino(){})**
+  - When clicked out of input box
 
-### \$('input').focus(function(){})
+- **\$('input').keyup(function(e){console.log(e.target.value)})**
+  - Prints out the value
 
-- When clicked on input box
+- **\$('select#gender').change(function({})**
+  - Whenever the select box changes
 
-### \$('input').blur(functino(){})
+- **\$('input#name').val()**
+  - Will get you the value of the input
 
-- When clicked out of input box
-
-### \$('input').keyup(function(e){console.log(e.target.value)})
-
-- Prints out the value
-
-### \$('select#gender').change(function({})
-
-- Whenever the select box changes
-
-### \$('input#name').val();
-
-- Will get you the value of the input
-
-### \$('#form').submit(function(e){ e.preventDefault(); console.log('Submitted')})
-
-- Whenever the form is submitted.
+- **\$('#form').submit(function(e){ e.preventDefault(); console.log('Submitted')})**
+  - Whenever the form is submitted.
