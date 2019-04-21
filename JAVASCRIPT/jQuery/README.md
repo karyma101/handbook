@@ -1,5 +1,7 @@
 ## Events
 
+### https://api.jquery.com/
+
 - **\$('#btn').click(function(e){ console.log(e)})**
 
   - shows all events
