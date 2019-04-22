@@ -82,6 +82,20 @@
 - This is probably controversial but having a basic understanding of Big-O time complexities and common runtimes such as O(N) and O(N Log N) won’t hurt you. Single page apps are more common now and understanding things like memory management helps. For example, if you were asked to build a client-side spell checker, knowing common data structures and algorithms is going to make your life a lot easier.
 
 - I’m not advocating you need a CS degree, but the industry has moved on from building simple web pages. There are a lot of resources online where you can pick up the basics fairly quickly.
+- Linked lists
+- Hashtables
+- Stacks and queues
+- Trees (binary trees and heaps)
+- Graphs
+
+### Sorting
+
+- Binary search
+- Bubble sort
+- Insertion sort
+- Merge sort
+- Quick sort
+- Selection sort
 
 ### General Web Knowledge
 
