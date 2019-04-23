@@ -8,4 +8,7 @@
 
 - https://webcode.tools/
 
-  -All purpose code generator
+  - All purpose code generator
+
+- http://stylifyme.com
+  - Checks Styles of other websites
