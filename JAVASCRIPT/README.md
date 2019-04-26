@@ -23,6 +23,10 @@
 - The difference between var/function/function* declarations and let/const/class declara­tions is the initialisation.
 - The former are initialised with undefined or the (generator) function right when the binding is created at the top of the scope. The lexically declared variables however stay uninitialised. This means that a ReferenceError exception is thrown when you try to access it. It will only get initialised when the let/const/class statement is evaluated, everything before (above) that is called the temporal dead zone. 
 
+### Ternary Operator
+- Shorthand if statement
+- condition ? true : false
+
 ### console
 
 - console.log('%c Title', 'color: orange; font-weight: bold;'), add css style in console
@@ -59,4 +63,8 @@
 
 ### .sort()
 
-- 
+- Specifies a function that defines the sort order. If omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
+
+### .reduce()
+
+- method executes a reducer function (that you provide) on each member of the array resulting in a single output value.
