@@ -1,3 +1,38 @@
+### Three Types of Variable
+- var
+  - Declares a variable, optionally initializing it to a value.
+- let
+  - Declares a block-scoped, local variable, optionally initializing it to a value.
+- const
+  - Declares a block-scoped, read-only named constant.
+
+### Scoping
+
+- When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document
+
+- When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+
+### Function
+- Function Declaration
+- Function Expression
+ - Named Function Expression
+ - Anonymous Function Expression
+
+### Hoisting
+- All declarations (var, let, const, function, function*, class) are "hoisted" in JavaScript. 
+- The difference between var/function/function* declarations and let/const/class declara­tions is the initialisation.
+- The former are initialised with undefined or the (generator) function right when the binding is created at the top of the scope. The lexically declared variables however stay uninitialised. This means that a ReferenceError exception is thrown when you try to access it. It will only get initialised when the let/const/class statement is evaluated, everything before (above) that is called the temporal dead zone. 
+
+### console
+
+- console.log('%c Title', 'color: orange; font-weight: bold;'), add css style in console
+- console.log({a, b, c}), multiple variables in a single line
+- console.table(array), neat table for arrays
+- console.time('looper); console.timeEnd('looper'), keeps track of how long it takes to run code in between
+- console.trace(''), shows where the function is called or stack trace logs
+
+## Dom Manipulation
+
 ### document.querySelector
 
 - returns a node list, not an array.
@@ -8,16 +43,8 @@
 
 ### Data Attribute
 
-- maded up attribute
+- maded up attribute in html
 - can call with this.dataset in javascript
-
-### console
-
-- console.log('%c Title', 'color: orange; font-weight: bold;'), add css style in console
-- console.log({a, b, c}), multiple variables in a single line
-- console.table(array), neat table for arrays
-- console.time('looper); console.timeEnd('looper'), keeps track of how long it takes to run code in between
-- console.trace(''), shows where the function is called or stack trace logs
 
 ## Array High Order Functions
 
@@ -29,3 +56,7 @@
 ### .map()
 
 - map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results.
+
+### .sort()
+
+- 
