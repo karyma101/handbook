@@ -50,6 +50,11 @@
 - maded up attribute in html
 - can call with this.dataset in javascript
 
+### IIFE (Immediately Invoked Function Expression)
+- used mainly back when let and const weren't around.
+- invokes function immediately and assigns to a variable.
+- variable inside of the function will be closed within that block.
+
 ## Array High Order Functions
 
 ### .filter()
