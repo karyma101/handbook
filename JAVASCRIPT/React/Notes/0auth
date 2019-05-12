@@ -1,0 +1,9 @@
+-protocol allowing resources on one site to be accessed by another site, without providing passwords
+-Works over HTTP, provides Access Token to 3rd party enabling limited access to data.
+
+Protocol Flow
+  Resource Owner: The end user that is allowing access to personal information.
+  Client: The application that is requesting access to personal information.
+  Authorization Server: Authenticates user and issues JWT access token.
+  Resource Server: The server that has the protected resources.
+

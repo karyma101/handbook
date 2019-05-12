@@ -1,0 +1,30 @@
+React
+  -Split into 2 libraries, React and ReactDOM
+  -React knows what a components is and how to make components work together
+  -ReactDOM knows how to take a component and make it show up in the ReactDOM
+
+  -Import: We want to get code from some other files or dependencies
+  -React: The variable we want to assign to this import to
+  -From: We are about to specify the name of the library or file we are importing from
+  -'React': The name of the dependency or path to the file we are importing
+
+  -import: ES2015 Module
+  -require: CommonJS Module
+
+Project Directory
+  -Src: Folder where we put all the source code we write
+  -Public: Folder that stores static files, like images
+  -Node_Module: Folder that contains all of our project dependencies
+  -Package.json: Records our project dependencies and configures our project
+  -Package-lock.json: Records the exact version of packages that we install
+  -README.md: Instructions on how to use this project
+
+Component
+  -Can be a function or class
+  -Produces HTML to show the user, using JSX
+  -Handles Feedback from the user, using event handlers
+  -Can be nested, reused, and easy to configure
+
+JSX
+  -Mixed of HTML and JS syntax
+  -Special Dialect of JS (its not HTML)

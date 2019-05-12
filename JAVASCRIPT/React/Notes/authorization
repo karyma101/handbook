@@ -1,0 +1,42 @@
+Sessions
+  -Allow a way to know who a user is without constantly having them log in
+  -Stored Temporarily in memory, saves time by minimizing database lookup
+
+Server-Side Sessions
+  -User is given a session id that is used as a key to user database
+  -Data stored in the server is accessed through session id
+  Cons: Complex when multiple servers are used, Session data needs to be shared amongst servers, doesn't work on devices that don't support cookies.
+
+Client-Side Sessions
+  -Users are given encrypted data from the server called a token, stored on a Client.
+  -Client sends data to server, server decrypts to access user information.
+  -Server uses information to look up requested resources.
+
+jSON Web Token(JWT)
+  -Contains user information shared between a client and server.
+  -Digitally signed and encrypted ensuring its integrity.
+
+JWT structure
+  Header.Payload.Signature
+  Header: type of token and how it has been encrypted
+    -Header has 2 parts, alg: encryption algorithm, typ: type of token
+  Payload: 'claims' about the user's identification
+    -contains standard and custom keys, iss: issuer of token, exp: expiration time, sub: subject, session/name/lastpage: custom data
+  Signature: A hash of the header/payload with a secret key. Used to verify the token.
+  -JWT tokens are easily decrypt, if the payload is modified it will no longer match the signature.
+  -Useful for creating valid tokens for authorization, transmitting sensitive data.
+  -JWT token is created after user is authenticated.
+  -Browser sends JWT token back to server on all request, providing the user identity.
+
+Cookies vs JWT
+  Cookies: 
+    -Contains a session id
+    -Requires a database lookup for every request
+    -Usage scenarios
+    -Scaling can be difficult
+  JWT: 
+    -Contains verified user information
+    -No database lookups required
+    -State is stored on client
+    -Scales easily
+
