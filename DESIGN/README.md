@@ -24,3 +24,8 @@
 ### Buttons
 
 - https://www.css3buttongenerator.com/
+
+### Others
+
+- http://stylifyme.com
+  - Checks Style of Websites

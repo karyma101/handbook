@@ -1,0 +1,20 @@
+// CLASS COMPONENT
+class ReactHeader extends React.Component {
+  render() {
+    return (
+      <h1>
+        React {this.props.version || 16} Documentation
+      </h1>
+    )
+  }
+}
+
+
+// FUNCTIONAL COMPONENT
+function ReactHeader(props) {
+  return (
+    <h1>
+      React {props.version || 16} Documentation
+    </h1>
+  )
+}
