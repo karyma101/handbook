@@ -10,7 +10,7 @@ class ReactHeader extends React.Component {
 }
 
 
-// FUNCTIONAL COMPONENT
+// FUNCTIONAL/STATELESS COMPONENT
 function ReactHeader(props) {
   return (
     <h1>
