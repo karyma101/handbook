@@ -13,3 +13,7 @@
 - https://medium.com/android-bits/10-useful-git-commands-you-always-need-b0d0a50b81e6
 
   - Useful Git Commands
+
+- https://www.elementalidad.com/2017-11-06-keyboard-shortcuts
+
+  - Mac Shortcuts
