@@ -5,6 +5,8 @@
     - Conditional: “if some condition is met, then do X. Otherwise, do Y”.
     - Loop: “do something Z number of times” or “do something repeatedly until some condition is met”.
     - Exception: “do steps A, B, C. If an error occurs, stop, and do steps J, K, L”.
+    
+- **Loops**: A loop is a structure in programming where the instructions are written once, but a computer can execute them multiple times. Each execution of those instructions is called an iteration. For loops (count-controlled loops) repeat for a specified number of times. While loops (condition-controlled loops) repeat until a condition changes. For each loops (collection-controlled loops) repeat for each item in a collection.
 
 - **Functions**: A sequence of instruction that preforms specific task, packaged as a unit. Parameters and arguments are both inputs to a function. Parameters refer abstractly to a function’s inputs and arguments are the actual values inputted.
 
