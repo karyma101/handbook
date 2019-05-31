@@ -24,7 +24,6 @@
 
 - **Programming**: the mental process of creatively coming up with a way of giving instructions to any machine, not necessarily a computer. 
 
-
 # Careers
 
 **Development Operations**
@@ -62,10 +61,21 @@
 
 - Because quantum computing is able to store and process information in a much more sophisticated way, it is able to perform calculations and model phenomena much more quickly than even the fastest supercomputers. Given its capabilities, there are some really interesting applications for quantum computing related to information security, chemistry, finance, and artificial intelligence. However, you might have to wait a bit until we can really use quantum computing. While IBM has allowed people to use its quantum computing resources since 2016, early stages of commercialization will really begin to emerge in 2025 
 
+
+# Status Code 
+
+- 200: Request has succeeded
+- 301: Moved Permanently
+- 404: Requested Resource was not found
+- 500: Internal Server Error
+
 # Links
 
-### History of Computers
+#### History of Computers
 - https://cs.brown.edu/~adf/programming_languages.html
 
-### Moore's Law
+#### Moore's Law
 - https://en.wikipedia.org/wiki/Moore%27s_law
+
+#### Dijkstra's Algorithm
+- https://www.codecademy.com/paths/code-foundations/tracks/cf-computer-science/modules/survey-of-computer-science/articles/cf-cs-ridesharing
