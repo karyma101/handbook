@@ -1,3 +1,4 @@
+
 # Definitions
 - **Control flow**: is the order in which instructions are executed.
 
@@ -24,9 +25,47 @@
 - **Programming**: the mental process of creatively coming up with a way of giving instructions to any machine, not necessarily a computer. 
 
 
+# Careers
 
+**Development Operations**
+
+- When people think about computer science and programming, they often think of software development: people making software. But how does that software get to users, and who maintains it while it’s out there? That’s IT operations: people deploying and maintaining existing software. Development and Operations both write code and make decisions that are critical to the product, but some companies organize them as different departments with different goals. DevOps is a combination of those two groups, in word and work. It’s an approach to software development where those teams work together to release code quickly and safely.
+
+- DevOps roles fill this need by making automated systems to deploy code and bringing organizational changes that increase collaboration between development and operations teams. This allows them to improve their software by releasing new features quickly without breaking old ones.
+
+- Roles like this may also be listed as Site Reliability Engineering. Site Reliability Engineering (SRE) was created at Google around 2003 with the same goals in mind and, like many things from that company, the name got popular.
+
+- DevOps is an exciting field because it touches the entire release process. Who cares about a new feature if it’s not available to users? How can a new system create impact if it’s filled with bugs? DevOps ensures that new features and software is released quickly, has low rates of failure, and in the event that something does go wrong, that it will be fixed quickly.
+
+
+**Machine Learning Engineer**
+- Another increasingly popular software engineer role is Machine Learning Engineer. As more companies use data science to make informed decisions, they hire more programmers specializing in Machine Learning (or ML for short). Machine Learning engineers build, well, machine learning algorithms. They focus on writing optimized algorithms that make use of massive amounts of data, which in turn can be used to create different products. So what distinguishes a machine learning engineer from a data scientist, or even a data engineer?
+
+- While ML engineers need the holistic knowledge of a data scientist, they also need strong programming skills and an understanding of software development processes, like a traditional software engineer. Ultimately this combination means that rather than producing insights through their own analysis, they’re building the machine that will discover those insights for them. They’re harnessing data not just to communicate findings, but to build a system or product that utilizes that data directly.
+
+- Being a ML engineer puts you at the cutting edge of two fields: software development and data science. So take note - while understanding computer science is important, to land this job you’ll need to have a solid background in data science as well!
+
+
+**Robotics Developer**
+- We may jokingly say that robots are soon going to take over the world but according to Loup Ventures Research, the industrial robotics market is supposed to increase by 175% over the next 10 years. Whether it’s the arm that grabs your Amazon order off the shelf or your personal Roomba, robots are part of our lives in many different ways.
+
+- Robotics encompasses several different fields, including mechanical engineering, electrical engineering, and, you guessed it, computer science. You can think of each of these fields as applying to a different part of the robot: the body [how it moves], the nervous system [how it senses], and the brain [how it decides]. So in addition to programming a computer, you also have the chance to design and put together the entire system.
+
+- When designing a robot, its physical attributes are only half the battle. Consider the Mars Curiosity Rover, which landed on Mars in 2012. It’s a car-sized, incredible exploration machine, capable of analyzing soil samples, avoiding hazards, cleaning itself, and performing x-ray spectrometry. This is a massive mechanical and electrical engineering accomplishment, but the rover also requires software to run. Engineers at NASA wrote 2.5 million lines of C that tell Curiosity what to do and when to do it.
+
+- In Robotics Engineering, you will have a chance to be at the forefront of designing some of the world’s most incredible machines.
+
+**Quantum Computing**
+- Quantum Computing is the hot new field that has companies like IBM and Google racing to be at the forefront of an emerging industry — and studying computer science will help you be a part of it all.
+
+- Quantum Computing refers to computational processes that utilize quantum mechanics. In order to explain quantum computing, it’s important to recall how traditional or “classical” computing works. In classical computing, information is stored in bits. Bits can have one state, on or off, also represented as ones and zeroes. Quantum computing results from the fact that subatomic particles can simultaneously exist in multiple states. Think of it as the difference between a situation being in black or white versus the entire color spectrum. With quantum computing, information is stored in a quantum bit (referred to as a qubit) which can have multiple states, store huge amounts of data, and use much less energy.
+
+- Because quantum computing is able to store and process information in a much more sophisticated way, it is able to perform calculations and model phenomena much more quickly than even the fastest supercomputers. Given its capabilities, there are some really interesting applications for quantum computing related to information security, chemistry, finance, and artificial intelligence. However, you might have to wait a bit until we can really use quantum computing. While IBM has allowed people to use its quantum computing resources since 2016, early stages of commercialization will really begin to emerge in 2025 
 
 # Links
 
 ### History of Computers
 - https://cs.brown.edu/~adf/programming_languages.html
+
+### Moore's Law
+- https://en.wikipedia.org/wiki/Moore%27s_law

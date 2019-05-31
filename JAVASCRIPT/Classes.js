@@ -25,3 +25,29 @@ console.log(myRectangle1.getArea())
 console.log(myRectangle2.getArea())
 
 myRectangle2.printDescription()
+
+
+//Getter & Setters
+
+class Square {
+  constructor(_width) {
+    this.width = _width
+    this.height = _width
+  }
+
+  get area() {
+    return this.width * this.height
+  }
+
+  set area(area) {
+    this.width = Math.sqrt(area)
+    this.height = this.width
+  }
+}
+
+let square1 = new Square(5)
+console.log(square1.area)
+
+square1.area = 16
+console.log(square1.width)
+console.log(square1.height)
