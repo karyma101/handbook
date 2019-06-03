@@ -6,12 +6,21 @@
     - Conditional: “if some condition is met, then do X. Otherwise, do Y”.
     - Loop: “do something Z number of times” or “do something repeatedly until some condition is met”.
     - Exception: “do steps A, B, C. If an error occurs, stop, and do steps J, K, L”.
+
+- **Data Science:**: the field of taking data and transforming it into meaningful information that can help us make decisions
+
+
+- **Descriptive Statistics**: statistics that describe the data in objective terms
     
-- **Loops**: A loop is a structure in programming where the instructions are written once, but a computer can execute them multiple times. Each execution of those instructions is called an iteration. For loops (count-controlled loops) repeat for a specified number of times. While loops (condition-controlled loops) repeat until a condition changes. For each loops (collection-controlled loops) repeat for each item in a collection.
+- **Domain Expertise**: the particular set of knowledge that someone cultivates and brings with them in order to understand their data
 
 - **Functions**: A sequence of instruction that preforms specific task, packaged as a unit. Parameters and arguments are both inputs to a function. Parameters refer abstractly to a function’s inputs and arguments are the actual values inputted.
 
 - **Hardcoding**: when we use values without assigning it to a variable. It may be faster if value is shorter than variable name and not repeated many times, but more room for error.
+
+- **Inferential Statistics**: inferences for the overall population based on data
+
+- **Loops**: A loop is a structure in programming where the instructions are written once, but a computer can execute them multiple times. Each execution of those instructions is called an iteration. For loops (count-controlled loops) repeat for a specified number of times. While loops (condition-controlled loops) repeat until a condition changes. For each loops (collection-controlled loops) repeat for each item in a collection.
 
 - **Primitive Data Types**: Primitives are the most basic data types, so basic that you can find them in pretty much every programming language.
 
@@ -22,7 +31,10 @@
     - Boolean: represent the logical ideas of true and false. Used for determining validity, making decisions
         - https://en.wikipedia.org/wiki/George_Boole
 
+- **Probability**: the likelihood that an event will happen
+
 - **Programming**: the mental process of creatively coming up with a way of giving instructions to any machine, not necessarily a computer. 
+
 
 # Careers
 
