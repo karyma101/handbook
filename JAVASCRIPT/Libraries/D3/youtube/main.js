@@ -27,3 +27,9 @@ let divSelection = d3.select("body")
 	  })
     .attr("class", "bar")
     .style("width", function(d) { return d.amount * 50 + "px"; });
+
+  
+
+// .on("mouseover", function(d,i) {
+//           d3.select(this).text(d);
+//     });
