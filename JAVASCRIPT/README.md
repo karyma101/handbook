@@ -12,13 +12,29 @@
 
 - When you declare a variable within a function, it is called a local variable, because it is available only within that function.
 
+- **Blocks** are statements that exist within curly braces {}.
+
+- **Global scope** refers to the context within which variables are accessible to every part of the program.
+
+- **Global variables** are variables that exist within global scope.
+
+- **Block scope** refers to the context within which variables that are accessible only within the block they are defined.
+
+- **Local variables** are variables that exist within block scope.
+
+- **Global namespace** is the space in our code that contains globally scoped information.
+
+- **Scope pollution** is when too many variables exist in a namespace or variable names are reused.
+
 ### Function
+
 - Function Declaration
 - Function Expression
  - Named Function Expression
  - Anonymous Function Expression
 
 ### Hoisting
+
 - All declarations (var, let, const, function, function*, class) are "hoisted" in JavaScript. 
 - The difference between var/function/function* declarations and let/const/class declara­tions is the initialisation.
 - The former are initialised with undefined or the (generator) function right when the binding is created at the top of the scope. The lexically declared variables however stay uninitialised. This means that a ReferenceError exception is thrown when you try to access it. It will only get initialised when the let/const/class statement is evaluated, everything before (above) that is called the temporal dead zone. 
