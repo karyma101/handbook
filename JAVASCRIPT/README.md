@@ -27,11 +27,21 @@
 - **Scope pollution** is when too many variables exist in a namespace or variable names are reused.
 
 ### Function
-
+- Functions are first class objects
+  - Stored in variables, objects, or arrays
+    - let fn = function doSomething() {}
+    - let obj = { doSomething : function(){} }
+    - arr.push(function doSomething() {})
+  - Passed as an argument to a function
+  - returned from a function
 - Function Declaration
 - Function Expression
  - Named Function Expression
  - Anonymous Function Expression
+- A callback is a function passed as an argument to another function
+  - doAction(function doSomething(){})
+- High Order Functions
+ - a function that takes another function as an input, returns a function or does both
 
 ### Hoisting
 
@@ -43,7 +53,7 @@
 - Shorthand if statement
 - condition ? true : false
 
-### console
+### Console
 
 - console.log('%c Title', 'color: orange; font-weight: bold;'), add css style in console
 - console.log({a, b, c}), multiple variables in a single line
