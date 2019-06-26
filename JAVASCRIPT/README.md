@@ -42,6 +42,14 @@
   - doAction(function doSomething(){})
 - High Order Functions
  - a function that takes another function as an input, returns a function or does both
+- Factory Functions returns an object
+
+### Objects 
+- Dot/Bracket Notation are used to access the key within an object
+ - Bracket Notation can target keys with space, numbers, symbols. Can also pass in variables.
+
+### Methods
+- functions as object's keys
 
 ### Hoisting
 
@@ -82,6 +90,7 @@
 - variable inside of the function will be closed within that block.
 
 ## Array High Order Functions
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods
 
 ### .filter()
 
@@ -95,6 +104,10 @@
 ### .findIndex()
 
 - method that returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating no element passed the test.
+
+### .forEach()
+- Execute the same code for each element of an array.
+- The return value will always be undefined
 
 ### .map()
 
