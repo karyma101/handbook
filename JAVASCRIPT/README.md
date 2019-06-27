@@ -11,19 +11,12 @@
 - When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document
 
 - When you declare a variable within a function, it is called a local variable, because it is available only within txhat function.
-
 - **Blocks** are statements that exist within curly braces {}.
-
 - **Global scope** refers to the context within which variables are accessible to every part of the program.
-
 - **Global variables** are variables that exist within global scope.
-
 - **Block scope** refers to the context within which variables that are accessible only within the block they are defined.
-
 - **Local variables** are variables that exist within block scope.
-
 - **Global namespace** is the space in our code that contains globally scoped information.
-
 - **Scope pollution** is when too many variables exist in a namespace or variable names are reused.
 
 ### Function
@@ -42,7 +35,7 @@
   - doAction(function doSomething(){})
 - High Order Functions
  - a function that takes another function as an input, returns a function or does both
-- Factory Functions returns an object
+- **Factory Functions**
 
 ### Objects 
 - Objects store collections of key-value pairs.
@@ -58,15 +51,13 @@
   - When the data stored on an object is a function we call that a method.
 - **this** keyword references the calling object which provides access to the calling object’s properties.
   - Arrow functions inherently bind, or tie, an already defined this value to the function itself that is NOT the calling object. 
-- **Getters**
+- **Getters/Setters**
   - can perform an action on the data when getting a property.
   - can return different values using conditionals.
   - we can access the properties of the calling object using this.
   - The functionality of our code is easier for other developers to understand.
   - cannot share same name as other properties in object.
-  - does not need parentheses to invoke getter function
-- **Setters**
-  - 
+  - does not need parentheses to invoke getter function 
 
 ### Hoisting
 - All declarations (var, let, const, function, function*, class) are "hoisted" in JavaScript. 
