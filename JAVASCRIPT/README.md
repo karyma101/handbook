@@ -10,7 +10,7 @@
 
 - When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document
 
-- When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+- When you declare a variable within a function, it is called a local variable, because it is available only within txhat function.
 
 - **Blocks** are statements that exist within curly braces {}.
 
@@ -45,14 +45,23 @@
 - Factory Functions returns an object
 
 ### Objects 
+- Objects store collections of key-value pairs.
+- Each key-value pair is a **property**
+- An object literal is composed of comma-separated key-value pairs surrounded by curly braces.
+- Objects are mutable—we can change their properties even when they’re declared with const.
 - Dot/Bracket Notation are used to access the key within an object
  - Bracket Notation can target keys with space, numbers, symbols. Can also pass in variables.
+- Delete operator removes property from object
+  - delete object.key
+- Objects are passed by reference, this means when we pass a variable assigned to an object into a function as an argument, the computer interprets the parameter name as pointing to the space in memory holding that object.
+- The **this** keyword references the calling object which provides access to the calling object’s properties.
+  - Arrow functions inherently bind, or tie, an already defined this value to the function itself that is NOT the calling object. 
+
 
 ### Methods
-- functions as object's keys
+- When the data stored on an object is a function we call that a method.
 
 ### Hoisting
-
 - All declarations (var, let, const, function, function*, class) are "hoisted" in JavaScript. 
 - The difference between var/function/function* declarations and let/const/class declara­tions is the initialisation.
 - The former are initialised with undefined or the (generator) function right when the binding is created at the top of the scope. The lexically declared variables however stay uninitialised. This means that a ReferenceError exception is thrown when you try to access it. It will only get initialised when the let/const/class statement is evaluated, everything before (above) that is called the temporal dead zone. 
