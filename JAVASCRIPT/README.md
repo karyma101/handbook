@@ -54,12 +54,19 @@
 - Delete operator removes property from object
   - delete object.key
 - Objects are passed by reference, this means when we pass a variable assigned to an object into a function as an argument, the computer interprets the parameter name as pointing to the space in memory holding that object.
-- The **this** keyword references the calling object which provides access to the calling object’s properties.
+- **Methods**
+  - When the data stored on an object is a function we call that a method.
+- **this** keyword references the calling object which provides access to the calling object’s properties.
   - Arrow functions inherently bind, or tie, an already defined this value to the function itself that is NOT the calling object. 
-
-
-### Methods
-- When the data stored on an object is a function we call that a method.
+- **Getters**
+  - can perform an action on the data when getting a property.
+  - can return different values using conditionals.
+  - we can access the properties of the calling object using this.
+  - The functionality of our code is easier for other developers to understand.
+  - cannot share same name as other properties in object.
+  - does not need parentheses to invoke getter function
+- **Setters**
+  - 
 
 ### Hoisting
 - All declarations (var, let, const, function, function*, class) are "hoisted" in JavaScript. 
