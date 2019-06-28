@@ -35,7 +35,7 @@
   - doAction(function doSomething(){})
 - High Order Functions
  - a function that takes another function as an input, returns a function or does both
-- **Factory Functions**
+- **Factory Functions** allow us to create object instances quickly and repeatedly.
 
 ### Objects 
 - Objects store collections of key-value pairs.
@@ -47,6 +47,9 @@
 - Delete operator removes property from object
   - delete object.key
 - Objects are passed by reference, this means when we pass a variable assigned to an object into a function as an argument, the computer interprets the parameter name as pointing to the space in memory holding that object.
+- The object that a method belongs to is called the calling object.
+- The usage of an underscore before a property name means that the original developer did not intend for that property to be directly changed.
+- Setters and getter methods allow for more detailed ways of accessing and assigning properties.
 - **Methods**
   - When the data stored on an object is a function we call that a method.
 - **this** keyword references the calling object which provides access to the calling object’s properties.
@@ -58,6 +61,10 @@
   - The functionality of our code is easier for other developers to understand.
   - cannot share same name as other properties in object.
   - does not need parentheses to invoke getter function 
+- Built in object methods/instances
+  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods
+  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor
+  
 
 ### Hoisting
 - All declarations (var, let, const, function, function*, class) are "hoisted" in JavaScript. 
