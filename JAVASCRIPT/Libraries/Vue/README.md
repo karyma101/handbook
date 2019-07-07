@@ -3,3 +3,5 @@ Custom HTML attributes built into Vue that accomplish incredibly complex, common
   - v-if
   - v-for
   - v-model
+
+- https://vuejs.org/v2/api/#Directives
