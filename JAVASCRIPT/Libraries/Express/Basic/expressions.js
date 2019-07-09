@@ -1,26 +1,20 @@
 const express = require('express');
-const app = express();
-
-// Serves Express Yourself website
-app.use(express.static('public'));
 
 const { getElementById, getIndexById, updateElement,
-        seedElements, createElement } = require('./utils');
+  seedElements, createElement } = require('./utils');
 
-const expressions = [];
+let expressions = [];
 seedElements(expressions, 'expressions');
-const animals = [];
-seedElements(animals, 'animals');
 
-const PORT = process.env.PORT || 4001;
-// Use static server to serve the Express Yourself Website
-app.use(express.static('public'));
+expressionsRouter = express.Router();
 
-app.get('/expressions', (req, res, next) => {
+// Get all expressions
+expressionsRouter.get('/', (req, res, next) => {
   res.send(expressions);
 });
 
-app.get('/expressions/:id', (req, res, next) => {
+// Get a single expression
+expressionsRouter.get('/:id', (req, res, next) => {
   const foundExpression = getElementById(req.params.id, expressions);
   if (foundExpression) {
     res.send(foundExpression);
@@ -29,7 +23,8 @@ app.get('/expressions/:id', (req, res, next) => {
   }
 });
 
-app.put('/expressions/:id', (req, res, next) => {
+// Update an expression
+expressionsRouter.put('/:id', (req, res, next) => {
   const expressionIndex = getIndexById(req.params.id, expressions);
   if (expressionIndex !== -1) {
     updateElement(req.params.id, req.query, expressions);
@@ -39,7 +34,8 @@ app.put('/expressions/:id', (req, res, next) => {
   }
 });
 
-app.post('/expressions', (req, res, next) => {
+// Create an expression
+expressionsRouter.post('/', (req, res, next) => {
   const receivedExpression = createElement('expressions', req.query);
   if (receivedExpression) {
     expressions.push(receivedExpression);
@@ -49,7 +45,8 @@ app.post('/expressions', (req, res, next) => {
   }
 });
 
-app.delete('/expressions/:id', (req, res, next) => {
+// Delete an expression
+expressionsRouter.delete('/:id', (req, res, next) => {
   const expressionIndex = getIndexById(req.params.id, expressions);
   if (expressionIndex !== -1) {
     expressions.splice(expressionIndex, 1);
@@ -59,6 +56,4 @@ app.delete('/expressions/:id', (req, res, next) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`); 
-});
+module.exports = expressionsRouter;
