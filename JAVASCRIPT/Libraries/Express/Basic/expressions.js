@@ -1,7 +1,6 @@
 const express = require('express');
 
-const { getElementById, getIndexById, updateElement,
-  seedElements, createElement } = require('./utils');
+const { getElementById, getIndexById, updateElement, seedElements, createElement } = require('./utils');
 
 let expressions = [];
 seedElements(expressions, 'expressions');

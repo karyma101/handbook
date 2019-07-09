@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
 
-const { getElementById, getIndexById, updateElement,
-  seedElements, createElement } = require('./utils');
+const { getElementById, getIndexById, updateElement, seedElements, createElement } = require('./utils');
 
 const PORT = process.env.PORT || 4001;
 // Use static server to serve the Express Yourself Website
