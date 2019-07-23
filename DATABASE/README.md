@@ -1,0 +1,2 @@
+- Relational Database vs Non Relational Database
+- **SQL**: structured query language
