@@ -115,71 +115,61 @@
 
 * const declares a block-scoped, read-only named constant.
 
+## Features
+
 ### Console
 
-- console.log('%c Title', 'color: orange; font-weight: bold;'), add css style in console
-- console.log({a, b, c}), multiple variables in a single line
-- console.table(array), neat table for arrays
-- console.time('looper); console.timeEnd('looper'), keeps track of how long it takes to run code in between
-- console.trace(''), shows where the function is called or stack trace logs
+```javascript
+console.log('%c Title', 'color: orange; font-weight: bold;') // add css style in console
+console.log({a, b, c}) // multiple variables in a single line
+console.table(array) // neat table for arrays
+console.time('looper)
+console.timeEnd('looper') // keeps track of how long it takes to run code in between
+console.trace('') // shows where the function is called or stack trace logs
+```
 
-## Dom Manipulation
+### Dom Manipulation
 
-### document.querySelector
+* document.querySelector returns a node list, not an array.
 
-- returns a node list, not an array.
-
-### NodeList
-
-- node list does not have all the built in methods as an array
-
-### Data Attribute
-
-- maded up attribute in html
-- can call with this.dataset in javascript
+* NodeList does not have all the built in methods as an array
 
 ### IIFE (Immediately Invoked Function Expression)
-- used mainly back when let and const weren't around.
-- invokes function immediately and assigns to a variable.
-- variable inside of the function will be closed within that block.
 
-## Array High Order Functions
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods
+* Used mainly back when let and const weren't around.
 
-### .filter()
+* Invokes function immediately and assigns to a variable.
 
-- creates a new array with all elements that pass the test implemented by the provided function.
-- does not mutate the original array
+* Variable inside of the function will be closed within that block.
 
-### .find()
+### [Array High Order Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods)
 
-- method that returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned.
+* **.filter()**
+  * creates a new array with all elements that pass the test implemented by the provided function.
+  * does not mutate the original array
 
-### .findIndex()
+* **.find()**
+  * method that returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned.
 
-- method that returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating no element passed the test.
+* **.findIndex()**
+  * method that returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating no element passed the test.
 
-### .forEach()
-- Execute the same code for each element of an array.
-- The return value will always be undefined
+* **.forEach()**
+  * Execute the same code for each element of an array.
+  * The return value will always be undefined
 
-### .map()
+* **.map()**
+  * map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results.
 
-- map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results.
+* **.sort()**
+  * Specifies a function that defines the sort order. If omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
 
-### .sort()
+* **.reduce()**
+  * method executes a reducer function (that you provide) on each member of the array resulting in a single output value.
 
-- Specifies a function that defines the sort order. If omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
+* **.some()**
+  * method that tests whether at least one element in the array passes the test implemented by the provided function. 
 
-### .reduce()
-
-- method executes a reducer function (that you provide) on each member of the array resulting in a single output value.
-
-### .some()
-
-- method that tests whether at least one element in the array passes the test implemented by the provided function. 
-
-### .every()
-
-- method that tests whether all elements in the array pass the test implemented by the provided function.
-
+* **.every()**
+  * method that tests whether all elements in the array pass the test implemented by the provided function.
+  
