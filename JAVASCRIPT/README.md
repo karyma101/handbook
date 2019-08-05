@@ -2,83 +2,118 @@
 
 ## Definitions
 
-**Scoping**  
-When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document.  
-When you declare a variable within a function, it is called a local variable, because it is available only within txhat function.  
-**Blocks** are statements that exist within curly braces {}.  
-**Global scope** refers to the context within which variables are accessible to every part of the program.  
-**Global variables** are variables that exist within global scope.  
-**Block scope** refers to the context within which variables that are accessible only within the block they are defined.  
-**Local variables** are variables that exist within block scope.  
-**Global namespace** is the space in our code that contains globally scoped information.  
-**Scope pollution** is when too many variables exist in a namespace or variable names are reused.  
+### Scoping
 
-### Three Types of Variable
+* When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document
 
-var
-  - Declares a variable, optionally initializing it to a value.
-let
-  - Declares a block-scoped, local variable, optionally initializing it to a value.
-const
-  - Declares a block-scoped, read-only named constant.
+* When you declare a variable within a function, it is called a local variable, because it is available only within that function
 
+* **Blocks** are statements that exist within curly braces {}
 
+* **Global Scope** refers to the context within which variables are accessible to every part of the program
+
+* **Global Variables** are variables that exist within global scope
+
+* **Block Scope** refers to the context within which variables that are accessible only within the block they are defined
+
+* **Local Variables** are variables that exist within block scope
+
+* **Global Namespace** is the space in our code that contains globally scoped information
+
+* **Scope Pollution** is when too many variables exist in a namespace or variable names are reused
 
 ### Function
-- Functions are first class objects
-  - Stored in variables, objects, or arrays
-    - let fn = function doSomething() {}
-    - let obj = { doSomething : function(){} }
-    - arr.push(function doSomething() {})
-  - Passed as an argument to a function
-  - returned from a function
-- Function Declaration
-- Function Expression
- - Named Function Expression
- - Anonymous Function Expression
-- A callback is a function passed as an argument to another function
-  - doAction(function doSomething(){})
-- High Order Functions
- - a function that takes another function as an input, returns a function or does both
-- **Factory Functions** allow us to create object instances quickly and repeatedly.
 
-### Objects 
-- Objects store collections of key-value pairs.
-- Each key-value pair is a **property**
-- An object literal is composed of comma-separated key-value pairs surrounded by curly braces.
-- Objects are mutable—we can change their properties even when they’re declared with const.
-- Dot/Bracket Notation are used to access the key within an object
- - Bracket Notation can target keys with space, numbers, symbols. Can also pass in variables.
-- Delete operator removes property from object
-  - delete object.key
-- Objects are passed by reference, this means when we pass a variable assigned to an object into a function as an argument, the computer interprets the parameter name as pointing to the space in memory holding that object.
-- The object that a method belongs to is called the calling object.
-- The usage of an underscore before a property name means that the original developer did not intend for that property to be directly changed.
-- Setters and getter methods allow for more detailed ways of accessing and assigning properties.
-- **Methods**
-  - When the data stored on an object is a function we call that a method.
-- **this** keyword references the calling object which provides access to the calling object’s properties.
-  - Arrow functions inherently bind, or tie, an already defined this value to the function itself that is NOT the calling object. 
-- **Getters/Setters**
-  - can perform an action on the data when getting a property.
-  - can return different values using conditionals.
-  - we can access the properties of the calling object using this.
-  - The functionality of our code is easier for other developers to understand.
-  - cannot share same name as other properties in object.
-  - does not need parentheses to invoke getter function 
-- Built in object methods/instances
-  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods
-  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor
+* Functions are **First Class Objects**
+
+* Ways to declare functions
+  * Function Declaration
+  * Function Expression
+    * Named Function Expression
+    * Anonymous Function Expression
+
+* **High Order Functions** are functions that takes another function as an input, returns a function or does both
+
+* **Factory Functions** allow us to create object instances quickly and repeatedly.
+
+* Can be stored in variables, objects, or arrays
+
+  ```javascript
+  let fn = function doSomething() {}
+
+  let obj = { doSomething: function(){} }
+
+  arr.push(function doSomething(){})
+  ```
+
+* A **callback** is a function passed as an argument to another function
+
+  ```javascript
+    doAction(function doSomething(){})
+  ```
+
+### Objects
+
+* Objects store collections of key-value pairs
+
+* Each key-value pair is a **property**
+
+* An object literal is composed of comma-separated key-value pairs surrounded by curly braces
+
+* Objects are mutable—we can change their properties even when they’re declared with const
+
+* Dot/Bracket Notation are used to access the key within an object
+
+  * Bracket Notation can target keys with space, numbers, symbols. Can also pass in variables
+
+* Delete operator removes property from object
+  * delete object.key
   
+* Objects are passed by reference, this means when we pass a variable assigned to an object into a function as an argument, the computer interprets the parameter name as pointing to the space in memory holding that object
+
+* The object that a method belongs to is called the calling object
+
+* The usage of an underscore before a property name means that the original developer did not intend for that property to be directly changed
+
+* Setters and getter methods allow for more detailed ways of accessing and assigning properties
+
+* **Methods**
+  * When the data stored on an object is a function we call that a method
+
+* **This** keyword references the calling object which provides access to the calling object’s properties
+  * Arrow functions inherently bind, or tie, an already defined this value to the function itself that is NOT the calling object
+
+* **Getters/Setters**
+  * can perform an action on the data when getting a property
+  * can return different values using conditionals
+  * we can access the properties of the calling object using this
+  * The functionality of our code is easier for other developers to understand
+  * cannot share same name as other properties in object
+  * does not need parentheses to invoke getter function
+
+* [Built in object methods/instances](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods)
 
 ### Hoisting
-- All declarations (var, let, const, function, function*, class) are "hoisted" in JavaScript. 
-- The difference between var/function/function* declarations and let/const/class declara­tions is the initialisation.
-- The former are initialised with undefined or the (generator) function right when the binding is created at the top of the scope. The lexically declared variables however stay uninitialised. This means that a ReferenceError exception is thrown when you try to access it. It will only get initialised when the let/const/class statement is evaluated, everything before (above) that is called the temporal dead zone. 
+
+* All declarations (var, let, const, function, function*, class) are "hoisted" in JavaScript
+
+* The difference between var/function/function* declarations and let/const/class declara­tions is the initialisation
+
+* The former are initialised with undefined or the (generator) function right when the binding is created at the top of the scope. The lexically declared variables however stay uninitialised. This means that a ReferenceError exception is thrown when you try to access it. It will only get initialised when the let/const/class statement is evaluated, everything before (above) that is called the temporal dead zone
 
 ### Ternary Operator
-- Shorthand if statement
-- condition ? true : false
+
+* Shorthand if statement
+
+* condition ? true : false
+
+### Variables
+
+* var declares a variable, optionally initializing it to a value.
+
+* let declares a block-scoped, local variable, optionally initializing it to a value.
+
+* const declares a block-scoped, read-only named constant.
 
 ### Console
 
