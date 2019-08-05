@@ -1,2 +1,4 @@
 - Relational Database vs Non Relational Database
 - **SQL**: structured query language
+  - Uses **Tables** with **columns** and **rows**
+  - Tables can relate to each other by keys

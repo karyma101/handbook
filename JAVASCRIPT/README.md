@@ -1,23 +1,28 @@
+# Javascript
+
+## Definitions
+
+**Scoping**  
+When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document.  
+When you declare a variable within a function, it is called a local variable, because it is available only within txhat function.  
+**Blocks** are statements that exist within curly braces {}.  
+**Global scope** refers to the context within which variables are accessible to every part of the program.  
+**Global variables** are variables that exist within global scope.  
+**Block scope** refers to the context within which variables that are accessible only within the block they are defined.  
+**Local variables** are variables that exist within block scope.  
+**Global namespace** is the space in our code that contains globally scoped information.  
+**Scope pollution** is when too many variables exist in a namespace or variable names are reused.  
+
 ### Three Types of Variable
-- var
+
+var
   - Declares a variable, optionally initializing it to a value.
-- let
+let
   - Declares a block-scoped, local variable, optionally initializing it to a value.
-- const
+const
   - Declares a block-scoped, read-only named constant.
 
-### Scoping
 
-- When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document
-
-- When you declare a variable within a function, it is called a local variable, because it is available only within txhat function.
-- **Blocks** are statements that exist within curly braces {}.
-- **Global scope** refers to the context within which variables are accessible to every part of the program.
-- **Global variables** are variables that exist within global scope.
-- **Block scope** refers to the context within which variables that are accessible only within the block they are defined.
-- **Local variables** are variables that exist within block scope.
-- **Global namespace** is the space in our code that contains globally scoped information.
-- **Scope pollution** is when too many variables exist in a namespace or variable names are reused.
 
 ### Function
 - Functions are first class objects
