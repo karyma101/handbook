@@ -4,6 +4,11 @@
 
 - Accessible Rich Internet Applications
 
+### Bash
+
+- **B**ourne **A**gain **Sh**ell created by Brian Fox to replace the Bourne Shell.
+- Bash is the default shell for Linux and Mac
+
 ### CSS
 
 - Cascading Style Sheet
