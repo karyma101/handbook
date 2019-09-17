@@ -11,6 +11,7 @@
 ### Color
 
 - https://color.hailpixel.com/
+- https://color.adobe.com/create
 
 ### Image Placeholders
 

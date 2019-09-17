@@ -102,6 +102,19 @@
 * The super keyword calls the constructor() of a parent class.
 * Static methods are called on the class, but not on instances of the class.
 
+### Modules
+
+* find, fix and debug code more easily
+* reuse and recycle defined logic in different parts of our application
+* keep information private and protected from other modules
+* prevent pollution of the global namespace and potential naming collisions, by cautiously selecting variables and behavior we load into a program
+* module.exports exports the module for use in another program
+* require() imports the module for use in the current program
+* default exports use export default to export JavaScript objects, functions, and primitive data types
+* named exports use the export keyword to export data in variables
+* named exports can be aliased with the as keyword
+* import is a keyword that imports any object, function, or data type
+
 ### Hoisting
 
 * All declarations (var, let, const, function, function*, class) are "hoisted" in JavaScript
