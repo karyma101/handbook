@@ -17,7 +17,9 @@
 - **mv**: moves file into a directory or rename file
 - **rm**: deletes file or directories
   -**rm -r**: the r stands for recursive, used to delete directory and all of its child directories and files
-- **cat:** outputs the contents of a file to the terminal.
+- **cat**: outputs the contents of a file to the terminal
+- **nano**: is a command line text editor
+- **source**: makes the changes available right away in the session we are in
 
 ### Redirection
 
@@ -41,3 +43,5 @@
 - **standard output**: abbreviated stdout, is the information outputted after a process is run
 - **standard error**: abbreviated stderr, is an error message outputted by a failed process
 - **redirection**: reroutes standard input, standard output, and standard error.
+- **~/.bash_profile**: is the name of file used to store environment settings. It is commonly called the “bash profile”. When a session starts, it will load the contents of the bash profile before executing commands.
+  - **~** represents the user’s home directory.
