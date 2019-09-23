@@ -50,6 +50,54 @@
 - **HOME**: is the home directory. It is usually not customized
 - **USER**: is the name of the current user
 
+### Bash Scripting
+```bash
+  if [$index -lt 5]
+  then
+    echo $index
+  else
+    echo 5
+  fi
+```
+- **if statements**
+  - When comparing strings, it is best practice to put the variable into quotes (")
+  - **variable="value"**: to set a variable
+  - **Equal**: -eq
+  - **Not equal**: -ne
+  - **Less than or equal**: -le
+  - **Less than**: -lt
+  - **Greater than or equal**: -ge
+  - **Greater than**: -gt
+  - **Is null**: -z
+  - **Equal**: ==
+  - **Not equal**: !=
+
+```bash
+for word in $paragraph
+do
+  echo $word
+done
+```
+- **for loops**
+  - Note that word is being “defined” at the top of the for loop so there is no $ prepended. Remember that we prepend the $ when accessing the value of the variable.
+
+```bash
+while [ $index -lt 5 ]
+do
+  echo $index
+  index=$((index + 1))
+done
+```
+
+` **while loops**
+  - keep looping while the provided condition is true
+
+```bash
+
+```
+- **for loops**
+  - until loops loop until the condition is true.
+
 ### Definitions
 
 - **standard input**: abbreviated as stdin, is information inputted into the terminal through the keyboard or input device
