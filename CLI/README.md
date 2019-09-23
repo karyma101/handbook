@@ -19,7 +19,8 @@
   -**rm -r**: the r stands for recursive, used to delete directory and all of its child directories and files
 - **cat**: outputs the contents of a file to the terminal
 - **nano**: is a command line text editor
-- **source**: makes the changes available right away in the session we are in
+- **history**: shows user command history in current session
+- **clear**: clear terminal text
 
 ### Redirection
 
@@ -36,6 +37,15 @@
 - **sed**: stands for “stream editor”. It accepts standard input and modifies it based on an expression, before displaying it as output data. 
   - sed ' "s" stands for substitution / the search string / the replacement string / ["g" stands for globally without this only substitute first instance]'
 
+### ~/.bash_profile
+- **source ~/.bash_profile**: makes the changes in bash_profile settings available right away in the session we are in
+- **alias**: the alias command allows you to create keyboard shortcuts, or aliases, for commonly used commands
+- **export USER="Jane Doe"**: creates an environment variable
+  - to use environment variable, $USER
+- **PS1**: is a variable that defines the makeup and style of the command prompt.
+- **$PATH**: is an environment variable that stores a list of directories separated by a colon
+  - Each directory contains scripts for the command line to execute. The PATH variable simply lists which directories contain scripts
+- **env**: command stands for “environment”, and returns a list of the environment variables for the current user.
 
 ### Definitions
 
@@ -45,3 +55,4 @@
 - **redirection**: reroutes standard input, standard output, and standard error.
 - **~/.bash_profile**: is the name of file used to store environment settings. It is commonly called the “bash profile”. When a session starts, it will load the contents of the bash profile before executing commands.
   - **~** represents the user’s home directory.
+- **environment variables**: are variables that can be used across commands and programs and hold information about the environment.
