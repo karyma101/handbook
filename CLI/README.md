@@ -18,6 +18,7 @@
 - **rm**: deletes file or directories
   -**rm -r**: the r stands for recursive, used to delete directory and all of its child directories and files
 - **cat**: outputs the contents of a file to the terminal
+- **less**: similar to cat but better at handling larger files, it displays files in the terminalone page at a time
 - **nano**: is a command line text editor
 - **history**: shows user command history in current session
 - **clear**: clear terminal text
@@ -42,17 +43,20 @@
 - **alias**: the alias command allows you to create keyboard shortcuts, or aliases, for commonly used commands
 - **export USER="Jane Doe"**: creates an environment variable
   - to use environment variable, $USER
-- **PS1**: is a variable that defines the makeup and style of the command prompt.
+- **PS1**: is a variable that defines the makeup and style of the command prompt
 - **$PATH**: is an environment variable that stores a list of directories separated by a colon
   - Each directory contains scripts for the command line to execute. The PATH variable simply lists which directories contain scripts
-- **env**: command stands for “environment”, and returns a list of the environment variables for the current user.
+- **env**: command stands for “environment”, and returns a list of the environment variables for the current user
+- **HOME**: is the home directory. It is usually not customized
+- **USER**: is the name of the current user
 
 ### Definitions
 
 - **standard input**: abbreviated as stdin, is information inputted into the terminal through the keyboard or input device
 - **standard output**: abbreviated stdout, is the information outputted after a process is run
 - **standard error**: abbreviated stderr, is an error message outputted by a failed process
-- **redirection**: reroutes standard input, standard output, and standard error.
-- **~/.bash_profile**: is the name of file used to store environment settings. It is commonly called the “bash profile”. When a session starts, it will load the contents of the bash profile before executing commands.
-  - **~** represents the user’s home directory.
+- **redirection**: reroutes standard input, standard output, and standard error
+- **~/.bash_profile**: is the name of file used to store environment settings. It is commonly called the “bash profile”. When a session starts, it will load the contents of the bash profile before executing commands
+  - **~** represents the user’s home directory
+- **environment**: refers to the preferences and settings of the current user
 - **environment variables**: are variables that can be used across commands and programs and hold information about the environment.
