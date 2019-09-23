@@ -1,8 +1,6 @@
-# CLI
+# BASH
 
-## Bash
-
-### General
+## General
 
 - **pwd**: print working directory
 - **ls**: list files and directories
@@ -23,7 +21,7 @@
 - **history**: shows user command history in current session
 - **clear**: clear terminal text
 
-### Redirection
+## Redirection
 
 - **>**: redirection, takes the standard output of the command on the left, and redirects it to the file on the right. 
 - **>>** takes the standard output of the command on the left and appends (adds) it to the file on the right
@@ -38,7 +36,8 @@
 - **sed**: stands for “stream editor”. It accepts standard input and modifies it based on an expression, before displaying it as output data. 
   - sed ' "s" stands for substitution / the search string / the replacement string / ["g" stands for globally without this only substitute first instance]'
 
-### ~/.bash_profile
+## ~/.bash_profile
+
 - **source ~/.bash_profile**: makes the changes in bash_profile settings available right away in the session we are in
 - **alias**: the alias command allows you to create keyboard shortcuts, or aliases, for commonly used commands
 - **export USER="Jane Doe"**: creates an environment variable
@@ -50,9 +49,16 @@
 - **HOME**: is the home directory. It is usually not customized
 - **USER**: is the name of the current user
 
-### Bash Scripting
+## Bash Scripting
 
-- **#!/bin/bash**: first line of script to make sure script only runs on bash
+- **Configuration**
+  - **~/bin/**: When saving the script file, it is good practice to place commonly used scripts in the ~/bin/ directory
+  - **chmod +x script.sh**: The script files also need to have the “execute” permission to allow them to be run
+  - To ensure that scripts in ~/bin/ are available, you must add this directory to your PATH within your configuration file:
+    - **PATH=~/bin:$PATH**
+    - Now any scripts in the ~/bin directory can be run from anywhere by typing the filename.
+  - **#!/bin/bash**: first line of script to make sure script only runs on bash
+
 - **variable="value"**: to set a variable
 - **$variable**: access the value of the variable
 - **script.sh 'argument 1' 'argument 2'**: input arguments can be passed to a bash script after the script name, separated by spaces. To access argument in script, $1 $2
@@ -107,7 +113,8 @@ done
 ```
 - **until loops**
   - loops until the condition is true
-### Definitions
+  
+## Definitions
 
 - **standard input**: abbreviated as stdin, is information inputted into the terminal through the keyboard or input device
 - **standard output**: abbreviated stdout, is the information outputted after a process is run
