@@ -1,8 +1,6 @@
 # Git
 
-![logo]
-
-[logo]: https://github.com/karyma101/handbook/GIT/workflow.png
+![Git Workflow](https://github.com/karyma101/handbook/blob/master/GIT/workflow.png "Git Workflow")
 
  - Git workflow
   - A Working Directory: where you’ll be doing all the work: creating, editing, deleting and organizing files
