@@ -51,6 +51,23 @@
 - **USER**: is the name of the current user
 
 ### Bash Scripting
+
+- **#!/bin/bash**: first line of script to make sure script only runs on bash
+- **variable="value"**: to set a variable
+- **$variable**: access the value of the variable
+- **script.sh 'argument 1' 'argument 2'**: input arguments can be passed to a bash script after the script name, separated by spaces. To access argument in script, $1 $2
+- **read (variable)**: can request user input and store in variable
+- **read -a bar <<< $foo**: splits a string into an array
+- **Equal**: -eq
+- **Not equal**: -ne
+- **Less than or equal**: -le
+- **Less than**: -lt
+- **Greater than or equal**: -ge
+- **Greater than**: -gt
+- **Is null**: -z
+- **Equal**: ==
+- **Not equal**: !=
+
 ```bash
   if [$index -lt 5]
   then
@@ -61,16 +78,6 @@
 ```
 - **if statements**
   - When comparing strings, it is best practice to put the variable into quotes (")
-  - **variable="value"**: to set a variable
-  - **Equal**: -eq
-  - **Not equal**: -ne
-  - **Less than or equal**: -le
-  - **Less than**: -lt
-  - **Greater than or equal**: -ge
-  - **Greater than**: -gt
-  - **Is null**: -z
-  - **Equal**: ==
-  - **Not equal**: !=
 
 ```bash
 for word in $paragraph
@@ -93,11 +100,13 @@ done
   - keep looping while the provided condition is true
 
 ```bash
-
+until [ $index -eq 5 ] 
+  do echo $index 
+  index=$((index + 1)) 
+done
 ```
-- **for loops**
-  - until loops loop until the condition is true.
-
+- **until loops**
+  - loops until the condition is true
 ### Definitions
 
 - **standard input**: abbreviated as stdin, is information inputted into the terminal through the keyboard or input device
