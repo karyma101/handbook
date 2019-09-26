@@ -55,6 +55,9 @@
 - Flutter
 - React Native
 
+### separation of concerns
+- A JavaScript file can quickly get overloaded with styles if you regularly use the css method to modify element styles. It’s a best practice to group all of the style code in a CSS file, and use jQuery to add and remove the classes from elements
+
 ### URL
 
 - Uniform Resource Locator
