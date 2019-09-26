@@ -1,84 +1,19 @@
+# [jQuery](https://api.jquery.com/)
+
+- "With an infinite number of Legos, you could build an entire city — of course, this would take a long time. What if you were given pre-made Lego buildings, Lego roads, Lego parks, etc? You could build a city much faster." -Codecademy
+
+
 ## Events
 
-### https://api.jquery.com/
-
-- **\$('#btn').click(function(e){ console.log(e)})**
-
-  - shows all events
-
-- **\$(document).ready(function(){})**
-
-  - if script tag is placed in the head
-
-- **\$('ul li:first')**
-
-  - :first
-  - :last
-  - :even
-  - :odd
-  - :nth-child(x)
-
-- **\$(':text').hide()**
-
-  - hides the anything with the type of text
-
-- **\$('[href]').show()**
-
-  - shows anything with the attribute of href
-
-- **\$('p').toggle()**
-
-  - toggles between hide and show
-
-- **\$('#btn').click(function(){ alert('Button Clicked')})**
-
-  - Alert pops up when clicked
-
-- **\$('#btn').on('click', function(){ alert('Button Clicked')})**
-
-  - Same as above, but more optimized
-
-- **\$('#btn').dblclick(function(){ })**
-
-  - When double clicked
-
-- **\$('#btn).hover(function(){ })**
-
-  - Hover is a combination of both:
-    - \$('#btn').on('mouseenter', function(){ })
-    - \$('#btn').on('mouseleave', function(){ })
-
-- **\$('#btn').on('mouseup', function(){ })**
-
-  - When mouse click is released
-
-- **\$('#btn').on('mousedown', function(){ })**
-
-  - When mouse is held down
-
-- **\$('input').focus(function(){})**
-
-  - When clicked on input box
-
-- **\$('input').blur(functino(){})**
-
-  - When clicked out of input box
-
-- **\$('input').keyup(function(e){console.log(e.target.value)})**
-
-  - Prints out the value
-
-- **\$('select#gender').change(function({})**
-
-  - Whenever the select box changes
-
-- **\$('input#name').val()**
-
-  - Will get you the value of the input
-
-- **\$('#form').submit(function(e){ e.preventDefault(); console.log('Submitted')})**
-
-  - Whenever the form is submitted.
+- **$(document).ready(() => { })**: method that waits until the HTML page's DOM is ready to manipulate.
+- **const $variable = $('object')**: conventional to put jquery objects into variables
+- **.on(string, callback)**
+  - click
+- **.show() | .hide() | .toggle()**
+- **.fadeOut(option) | .fadeIn(option) | .fadeToggle(option) | .slideDown(option) | .slideUp(option) | .slideToggle(option)**
+  - optional parameter animation time in milliseconds
+  - default is 400 milliseconds
+  - can use 'fast' or 'slow'
 
 ## DOM Manipulation
 
