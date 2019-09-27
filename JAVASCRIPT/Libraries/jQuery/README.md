@@ -11,9 +11,10 @@
   - optional parameter animation time in milliseconds
   - default is 400 milliseconds
   - can use 'fast' or 'slow'
-- **.addClass('className') | .removeClass('className')**
+- **.addClass('className') | .removeClass('className') | .toggleClass('className')**
   - do not need the .
 - **$(event.currentTarget)** : if multiple divs with same classes, can use current target.
+  - **.val()**: calling this method will give you value of current target
 - **.focus()**: as soon as page loads it will focus on target, may start typing immediately.
 - **.css(option)**: modifies css properties of element.
  - 'property name', 'value'
@@ -25,3 +26,8 @@
   - option2:
     - default 400 milliseconds
     - number or 'fast' or 'slow'
+- **.children() | .parent() | .siblings()**
+- **.closest('element')**: travels up the DOM tree from the current element to target the closest element with a given selector
+- **.next()**: targets the element immediately following the selected element.
+- **.prev()**: targets the element that is immediately preceding the selected element.
+- **.find()**: to target descendant elements by some selector, ie- class, id, tag etc.
