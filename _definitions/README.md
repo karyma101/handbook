@@ -55,7 +55,11 @@
 - Flutter
 - React Native
 
-### separation of concerns
+### REPL (read–eval–print loop)
+
+- It’s a program that loops, or repeatedly cycles, through three different states: a read state where the program reads input from a user, the eval state where the program evaluates the user’s input, and the print state where the program prints out its evaluation to a console. Then it loops through these states again.
+
+### Separation of concerns
 - Separation of concerns is a design principle stating that code should be separated based on its purpose in a program. In web development, that generally means the structure of a page is defined in an HTML document, styles are stored in a CSS file, and code that defines dynamic behavior is stored in a JavaScript file.
 
 ### URL
