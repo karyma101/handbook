@@ -32,7 +32,10 @@
 - **git fetch**: see if changes have been made to the remote and bring the changes down to your local copy. This command will not merge changes from the remote into your local repository. It brings those changes onto what’s called a remote branch.
 - **git merge origin/master**: integrates origin/master into your local master branch.
 - **git push origin your_branch_name**: pushes a local branch to the origin remote
-
+- **git remote**: finds remote name
+  - **git remote show origin**: shows origin information
+  - **git remote rm origin**: removes remote to origin
+  - **git remote add origin path_to_new_remote**: adds new remote / used for repository name change
 
 ## Notes
 
