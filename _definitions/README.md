@@ -85,6 +85,10 @@
   - Firefox
   - Edge
 
+### Web Servers
+
+- A web server is a process running on a computer that listens for incoming requests for information over the internet and sends back responses.
+
 ### Webviews
 
 - Used by Native OS, in a native application to run a web page.
