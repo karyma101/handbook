@@ -54,7 +54,50 @@ const owlCat = (
 
 ### Components
 
-- A component is a small, reusable chunk of code that is responsible for one job.
+- components are a small, reusable chunk of code that is responsible for one job.
+- components class variable names must begin with capital letters
+
+### Props
+
+```JSX
+
+// this.props.children: will return values in between component JSX Tags
+
+<Component>
+  <li>Child</li>
+  <li>Child</li>
+</Component>
+```
+```JSX
+
+// .defaultProps
+
+class Example extends React.Component {
+  render() {
+    return <h1>{this.props.text}</h1>;
+  }
+}
+
+Example.defaultProps = { text: 'hello' }; 
+```
+
+### State
+
+- this.setState() takes an object, and merges that object with the component’s current state. If there are properties in the current state that aren’t part of that object, then those properties remain how they were.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - **Functional Components**: Good for simple content
 - **Class Components**: Good for just about everything else

@@ -1,4 +1,4 @@
-# Javascript
+# [Javascript](http://eloquentjavascript.net/)
 
 ## Definitions
 
