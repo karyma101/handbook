@@ -1,5 +1,55 @@
 # React
 
+## Advantages of using React
+- Fast
+- Modular, instead of writing large, dense files of code, you can write many smaller, reusable files.
+- Scalable
+- Flexible
+
+## Notes
+
+### JSX
+
+- class attributes must be changed to className since class is reserved word in Javascript.
+- must include the slash. If you write a self-closing tag in JSX and forget the slash, you will raise an error
+- Object properties are also often used to set attributes
+
+```JSX
+const pics = {
+  panda: "http://bit.ly/1Tqltv5",
+  owl: "http://bit.ly/1XGtkM3",
+  owlCat: "http://bit.ly/1Upbczi"
+}; 
+
+const panda = (
+  <img 
+    src={pics.panda} 
+    alt="Lazy Panda" />
+);
+
+const owl = (
+  <img 
+    src={pics.owl} 
+    alt="Unimpressed Owl" />
+);
+
+const owlCat = (
+  <img 
+    src={pics.owlCat} 
+    alt="Ghastly Abomination" />
+); 
+```
+
+### ReactDOM
+
+- ReactDOM.render() is the most common way to render JSX. It takes a JSX expression, creates a corresponding tree of DOM nodes, and adds that tree to the DOM. That is the way to make a JSX expression appear onscreen.
+
+### Virtual DOM
+
+### [Events](https://reactjs.org/docs/events.html#supported-events)
+- onClick
+- onMouseMove
+
 - **Functional Components**: Good for simple content
 - **Class Components**: Good for just about everything else
   - States
