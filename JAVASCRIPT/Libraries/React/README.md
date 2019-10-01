@@ -8,11 +8,13 @@
 
 ## Notes
 
-### JSX
+### [JSX](https://reactjs.org/docs/jsx-in-depth.html)
 
 - class attributes must be changed to className since class is reserved word in Javascript.
 - must include the slash. If you write a self-closing tag in JSX and forget the slash, you will raise an error
 - Object properties are also often used to set attributes
+- cannot use if statements in jsx but can use ternary operators
+- Every JSX element is secretly a call to React.createElement(), more [indepth](https://reactjs.org/docs/react-api.html#react.createelement)
 
 ```JSX
 const pics = {
@@ -50,6 +52,10 @@ const owlCat = (
 - onClick
 - onMouseMove
 
+### Components
+
+- A component is a small, reusable chunk of code that is responsible for one job.
+
 - **Functional Components**: Good for simple content
 - **Class Components**: Good for just about everything else
   - States
@@ -79,43 +85,3 @@ const owlCat = (
 
 - **Keys** are a way that React gives elements a stable identity. As things change very quickly in the virtual DOM, React needs an internal mechanism for keeping track of which items have been updated, which items have been removed, etc. Generally speaking, you want the key of each item to be a unique identifier, so that there aren't overlaps between the keys of multiple lists.
 
-# Redux
-
-## Middleware in Redux
-
-- Function that gets called with every action we dispatch
-- Has the ability to STOP, MODIFY, or otherwise mess around with actions
-- Tons of open source middleware exist
-- Most popular use of middleware is for dealing with async actions
-- We are going to use a middleware called redux-thunk to solve our async issues
-
-### Redux-Thunk
-
-- If Action is return with a function, it gets invoked with dispatch, once request is complete we manually dispatch action, new action object.
-- If Action is return with an object it goes straight to the reducer
-
-### Rules of Actions
-
-- Actions Creators must return action objects
-- Must have a type property
-- Can optionally have a payload
-
-### Rules of Reducers
-
-- Must return any value besides 'undefined'
-- Produces 'state' or data to be used inside of your app using only previous state and the actions (reducers are pure)
-- Must not return reach 'out of itself' to decide what value to return
-- Must not mutate its input 'state' argument
-
-# React-Router-Dom
-
-## Routers
-
-- Traditional Servers will return 404 if page is not found, react dev servers will check dev resources, public directory if page is not found it will return the index.
-
-- **BrowserRouter**: uses everything after the TLD (.com, .net) or port as the 'path'
-  - localhost:3000/page
-- **HashRouter**: uses everything after a # as the 'path'
-  - localhost:3000/#/page
-- **MemoryRouter**: doesn't use the URL to track navigation
-  - localhost:3000/
