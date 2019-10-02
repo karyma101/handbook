@@ -84,8 +84,7 @@ Example.defaultProps = { text: 'hello' };
 ### State
 
 - this.setState() takes an object, and merges that object with the component’s current state. If there are properties in the current state that aren’t part of that object, then those properties remain how they were.
-
-
+- this.setState() automatically calls .render()
 
 
 
