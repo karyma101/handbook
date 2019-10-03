@@ -60,7 +60,6 @@ const owlCat = (
 ### Props
 
 ```JSX
-
 // this.props.children: will return values in between component JSX Tags
 
 <Component>
@@ -69,7 +68,6 @@ const owlCat = (
 </Component>
 ```
 ```JSX
-
 // .defaultProps
 
 class Example extends React.Component {
@@ -86,18 +84,23 @@ Example.defaultProps = { text: 'hello' };
 - this.setState() takes an object, and merges that object with the component’s current state. If there are properties in the current state that aren’t part of that object, then those properties remain how they were.
 - this.setState() automatically calls .render()
 
+### Styling
 
+```JSX
+// Inline Styling
 
+<h1 style={{ color: 'red' }}>Hello world</h1>
+```
+```JSX
+// Object Styling
+const styles = {
+  background: 'lightblue',
+  color: 'darkred'
+}
 
+<h1 style={styles}>Hello World</h1>
 
-
-
-
-
-
-
-
-
+```
 - **Functional Components**: Good for simple content
 - **Class Components**: Good for just about everything else
   - States
