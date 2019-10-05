@@ -56,6 +56,35 @@ const owlCat = (
 
 - components are a small, reusable chunk of code that is responsible for one job.
 - components class variable names must begin with capital letters
+- An uncontrolled component is a component that maintains its own internal state. A controlled component is a component that does not maintain any internal state
+
+### Component Life Cycle Methods
+
+- mounting
+  - componentWillMount
+  - render
+  - componentDidMount 
+    - where you usually call external apis
+- updating
+  - componentWillReceiveProps 
+    - automatically gets passed one argument, an object called nextProps. Can be used to check props received and set state before render.
+  - shouldComponentUpdate 
+    - return true or false, if shouldComponentUpdate returns true, then nothing noticeable happens. But if shouldComponentUpdate returns false, then the component will not update. None of the remaining lifecycle methods for that updating period will be called, including render.
+    - The best way to use shouldComponentUpdate is to have it return false only under certain conditions. If those conditions are met, then your component will not update.
+    - automatically receives two arguments, nextProps and nextState. It’s typical to compare nextProps and nextState to the current this.props and this.state, and use the results to decide what to do.
+  - componentWillUpdate
+    - You cannot call this.setState from the body of componentWillUpdate
+    - The main purpose of componentWillUpdate is to interact with things outside of the React architecture. If you need to do non-React setup before a component renders, such as checking the window size or interacting with an API, then componentWillUpdate is a good place to do that.
+  - render
+  - componentDidUpdate
+    - componentDidUpdate gets called after any rendered HTML has finished loading.
+    - automatically gets passed two arguments: prevProps and prevState. prevProps and prevState are references to the component’s props and state before the current updating period began. You can compare them to the current props and state.
+    - usually used for interacting with things outside of the React environment, like the browser or APIs. It’s similar to componentWillUpdate in that way, except that it gets called after render instead of before.
+- unmounting
+  - componentWillUnmount
+    - occurs when the component is removed from the DOM.
+    - This could happen if the DOM is rerendered without the component, or if the user navigates to a different website or closes their web browser.
+    - automatically gets passed two arguments: prevProps and prevState.
 
 ### Props
 
@@ -101,6 +130,20 @@ const styles = {
 <h1 style={styles}>Hello World</h1>
 
 ```
+
+### propTypes
+
+```JSX
+componentName.propTypes = {
+  prop1: React.PropTypes.string.isRequired,
+  prop2: React.PropTypes.object.isRequired,
+  prop3: React.PropTypes.bool.isRequired,
+  prop4: React.PropTypes.number.isRequired,
+  prop5: React.PropTypes.func.isRequired,
+  prop6: React.PropTypes.array.isRequired
+}
+```
+
 - **Functional Components**: Good for simple content
 - **Class Components**: Good for just about everything else
   - States
