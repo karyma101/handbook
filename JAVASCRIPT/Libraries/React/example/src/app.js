@@ -1,17 +1,18 @@
 import React, { Fragment } from 'react'
 import { Switch, Route } from 'react-router-dom'
 
-import Header from './components/Navbar'
+import './App.css'
+
+import Navbar from './components/Navbar'
 import Home from './pages/home'
 import Example from './pages/examples'
 
 const App = () => {
   return (
     <Fragment>
-      <Header />
-
+      <Navbar />
       <Switch>
-        <Route path="/example">
+        <Route path="/examples">
           <Example />
         </Route>
         <Route path="/">

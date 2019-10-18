@@ -4,6 +4,8 @@
 
 - **node**: brings out REPL
 - **node -v**: node version
+- **npx**: use without downloading globally
+- **npm list -g --depth 0**: lists global dependencies 
 
 
 ## Built-in Javascript REPL
