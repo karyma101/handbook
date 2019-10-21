@@ -2,6 +2,9 @@
 
 ## Definitions
 
+### Temporal Dead Zones
+* where you cannot access a variable before it is defined.
+
 ### Scoping
 
 * When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document
@@ -163,6 +166,31 @@ console.trace('') // shows where the function is called or stack trace logs
 * Invokes function immediately and assigns to a variable.
 
 * Variable inside of the function will be closed within that block.
+
+### Destructuring 
+```Javascript
+
+// Array Destructuring
+
+//Ex 1
+let input = [1, 2]
+let [first, second] = input
+console.log(first); // outputs 1
+console.log(second); // outputs 2
+
+//Ex 2
+function f([first, second]: [number, number]) {
+    console.log(first);
+    console.log(second);
+}
+f([1, 2])
+
+//Ex 3
+let [, second, , fourth] = [1, 2, 3, 4];
+console.log(second); // outputs 2
+console.log(fourth); // outputs 4
+
+```
 
 ### [Array High Order Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods)
 
