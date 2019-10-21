@@ -17,11 +17,11 @@
     - object is a type that represents the non-primitive type, i.e. anything that is not number, string, boolean, symbol, null, or undefined.
   - let someValue: any = "this is a string"; let strLength: number = (someValue as string).length;
     - Type Assertions
+- let { a, b }: { a: string, b: number } = o
+  - The type, if you specify it, still needs to be written after the entire destructuring
 
 - **Tuple** types allow you to express an array with a fixed number of elements whose types are known, but need not be the same.
   - let x: [string, number]
 
 - **enum** is a way of giving more friendly names to sets of numeric values. By default, enums begin numbering their members starting at 0. You can change this by manually setting the value of one of its members.
   - enum Color { Red, Green, Blue = 5}
-
-- 
