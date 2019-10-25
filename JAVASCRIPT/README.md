@@ -27,6 +27,10 @@
 
 ### Function
 
+* Pure functions
+  - should not have side effects
+  - easier to test
+
 * Functions are **First Class Objects**
 
 * Ways to declare functions
@@ -54,6 +58,10 @@
   ```javascript
     doAction(function doSomething(){})
   ```
+### Immutable Data
+
+* const arr = Object.freeze([1, 2])
+
 
 ### Objects
 
@@ -189,6 +197,16 @@ f([1, 2])
 let [, second, , fourth] = [1, 2, 3, 4];
 console.log(second); // outputs 2
 console.log(fourth); // outputs 4
+
+// Object Destructuring
+
+let o = {
+    a: "foo",
+    b: 12,
+    c: "bar"
+}
+
+let { a, b: newVariableName } = o //can rename variable name 
 
 ```
 
