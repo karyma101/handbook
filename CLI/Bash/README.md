@@ -1,6 +1,15 @@
 # BASH
 
-## General
+- [What is a command line interface?](#What-is-a-command-line-interface?)
+- [Commands](#Commands)
+- [Redirection](#Redirection)
+- [Bash Profile](#Bash-Profile)
+- [Bash Scripting](#Bash-Scripting)
+
+## What is a command line interface?
+- A command line interface (CLI) is a means of interacting with a computer using text commands. Users write out commands to make their computers carry out the desired tasks. Constrast this to graphical user interface (GUI); Whenever you interact with your computer with a mouse or your mobile device with your fingers, you're doing so using visual cues provided by a GUI.
+
+## Commands
 
 - **pwd**: print working directory
 - **ls**: list files and directories
@@ -36,7 +45,7 @@
 - **sed**: stands for “stream editor”. It accepts standard input and modifies it based on an expression, before displaying it as output data. 
   - sed ' "s" stands for substitution / the search string / the replacement string / ["g" stands for globally without this only substitute first instance]'
 
-## ~/.bash_profile
+## Bash Profile
 
 - **source ~/.bash_profile**: makes the changes in bash_profile settings available right away in the session we are in
 - **alias**: the alias command allows you to create keyboard shortcuts, or aliases, for commonly used commands
