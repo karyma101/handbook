@@ -19,6 +19,19 @@
 - [Keywords](https://www.wordtracker.com/)
 - [Google Key Word Planner](https://ads.google.com/home/tools/keyword-planner/)
 - [Google Trends](https://trends.google.com/trends/?geo=US)
+- [Competition Keywords](https://www.spyfu.com/)
 
+## Basic Metadata
+```html
+  <title>(30 - 65 characters)</title>
+  <meta name="description" content="120-156 characters briefly summarizing your page"/>
+  <meta name="keywords" content="keyword, keyword2"/>
+  <!-- Keywords doesn't matter anymore -->
+```
+
+## Facebook Open Graph
+```html
+<meta property=""/>
+```
 
 - Modern crawlers run javascript for single page applications and picks up the html that is returned. If client side rendering is slow its better to look at server side rendering. 
