@@ -6,7 +6,7 @@
 
 ### Intro
 
-Javascript is a dynamic typed single threaded programming language. Javascript is parsed line by line. A new execution context is created when functions are called or invoked. Whenever new execution context is created it gets placed on top of the call stack. When functions get called, we create live store of data(local memory/variable environment state/state) for that function's execution context. When function finishing executing its local memory is deleted and deallocated except for the return value.
+Javascript is a dynamic typed single threaded programming language. Javascript is parsed line by line. A new execution context is created when functions are called or invoked. Whenever new execution context is created it gets placed on top of the call stack. When functions get called, we create live store of data(local memory/variable environment state/state) for that function's execution context. When function finishing executing its local memory is deallocated or garbage collected except for the return value.
 
 ### Closure
 
