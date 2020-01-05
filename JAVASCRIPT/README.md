@@ -10,7 +10,8 @@ Javascript is a dynamic typed single threaded programming language. Javascript i
 
 ### Closure
 
-Where you define your functions determines what variables your function have access to when you call the function.
+Where you define your functions determines what variables your function have access to when you call the function. The lexical scope is the available data when our function was defined is what determines our available variables and priorization at function execution, not where our function is called.
+  - [Example 1](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/closure.js)
 
 ### Definition
 

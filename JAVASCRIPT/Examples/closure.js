@@ -10,5 +10,5 @@ function outer(){
 }
 
 let newFunc = outer()
-newFunc()
-newFunc()
+newFunc() //1
+newFunc() //2
