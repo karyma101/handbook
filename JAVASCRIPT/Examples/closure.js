@@ -12,3 +12,7 @@ function outer(){
 let newFunc = outer()
 newFunc() //1
 newFunc() //2
+
+let anotherFunc = outer()
+anotherFunc() //1
+newFunc() //3
