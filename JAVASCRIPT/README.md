@@ -1,6 +1,7 @@
 # Javascript
 ## Table of Content
   1. [About](#about)
+  1. [Primitive Types](#primitive-type-&-value)
   1. [Execution Context](#execution-context)
   1. [Closure](#closure)
   1. [Asynchronous](#asynchronous)
@@ -11,6 +12,14 @@
 ## About
 
 Javascript is a dynamic typed single threaded programming language. Javascript is parsed line by line. 
+
+## Primitive Type & Value
+
+Javascript consist of two datatypes primitive types and Object. The primitive values are undefined, string, number, boolean, null, symbol. NaN is the only value that does not equal to itself. The isNaN function first coerces the value into a number and then check if it is NaN. In es6, the Number.isNaN() method tells if value is NaN without the coercion. Negative zero can be used for showing directions.
+
+  - [Data Types](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Dive_deeper/types.js)
+  - [NaN](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Dive_deeper/NaN.js)
+  - [Negative Zero](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Dive_deeper/negative_zero.js)
 
 ## Execution Context
 
@@ -27,10 +36,10 @@ Javascript runs the program line by line and when it hits a asynchronous callbac
 
 ## Prototype
 
-The new keyword will automatically create a new object, bind prototypes methods and return an object.
+The new keyword will automatically create a new object, bind prototypes methods and return an object. Use new keyword only for Object(), Array(), Function(), Date(), RegExp() and Error(). Don't use the new keyword for String(), Number() and Boolean()
   - [\_\_proto\_\_](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/__proto__.js)
-  - [prototype](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/prototype.js)
-  - [classes](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/classes.js)
+  - [Prototype](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/prototype.js)
+  - [Classes](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/classes.js)
 
 ## Definition
 
