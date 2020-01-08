@@ -1,5 +1,0 @@
-- **Math.round()**: rounds up or down
-- **Math.floor()**: rounds down
-- **Math.ceil()**: rounds up
-- **Math.abs()**: converting numbers to absolute, ex. negative numbers to positive numbers
-- **Math.random()**:
