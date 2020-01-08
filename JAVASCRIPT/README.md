@@ -4,9 +4,9 @@
   1. [Execution Context](#execution-context)
   1. [Closure](#closure)
   1. [Asynchronous](#asynchronous)
-  1. [Prototyping](#Prototyping)
-  1. [Array High Order Functions](#array-high-order-functions)
+  1. [Prototype](#Prototype)
   1. [Definitions](#definition)
+  1. [Array High Order Functions](#array-high-order-functions)
 
 ## About
 
@@ -25,11 +25,18 @@ Where you define your functions determines what variables your function have acc
 
 Javascript runs the program line by line and when it hits a asynchronous callback it will be placed in the callback queue. Once all the synchronous code is finished running and the event loop is cleared the functions from the callback queue gets pushed on top of the callstack.
 
-## Prototyping
+## Prototype
 
 The new keyword will automatically create a new object, bind prototypes methods and return an object.
   - [\_\_proto\_\_](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/__proto__.js)
   - [prototype](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/prototype.js)
+  - [classes](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/classes.js)
+
+## Definition
+
+- **Callback Function**: functions that are being passed in as paramters for another function
+- **High Order Function**: takes in a function or returns out a function
+- **Hoisting**: moves all variables declared with var and functions declarations to the top of their respective scopes.
 
 ## Array High Order Functions
 
@@ -61,9 +68,3 @@ The new keyword will automatically create a new object, bind prototypes methods 
 
 .every()
   - method that tests whether all elements in the array pass the test implemented by the provided function.
-
-## Definition
-
-- **Callback Function**: functions that are being passed in as paramters for another function
-- **High Order Function**: takes in a function or returns out a function
-- **Hoisting**: moves all variables declared with var and functions declarations to the top of their respective scopes.
