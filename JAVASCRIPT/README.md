@@ -5,7 +5,8 @@
   1. [Execution Context](#execution-context)
   1. [Closure](#closure)
   1. [Asynchronous](#asynchronous)
-  1. [Prototype](#Prototype)
+  1. [Prototype](#prototype)
+  1. [Strings](#strings)
   1. [Definitions](#definition)
   1. [Array High Order Functions](#array-high-order-functions)
 
@@ -28,6 +29,7 @@ A new execution context is created when functions are called or invoked. Wheneve
 ## Closure
 
 Where you define your functions determines what variables your function have access to when you call the function. The lexical scope is the available data when our function was defined is what determines our available variables and priorization at function execution, not where our function is called.
+
   - [Example 1](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/closure.js)
 
 ## Asynchronous
@@ -37,9 +39,18 @@ Javascript runs the program line by line and when it hits a asynchronous callbac
 ## Prototype
 
 The new keyword will automatically create a new object, bind prototypes methods and return an object. Use new keyword only for Object(), Array(), Function(), Date(), RegExp() and Error(). Don't use the new keyword for String(), Number() and Boolean()
+
   - [\_\_proto\_\_](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/__proto__.js)
   - [Prototype](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/prototype.js)
   - [Classes](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/classes.js)
+
+## Strings
+
+Template literals are enclosed by the back-tick character and can contain placeholders. The expressions in the placeholder and the text between the back-ticks get passed into a function and is returned a single string. Tagged templates are a more advanced form of template literals which allows you parse template literals with a function. You can add or remove white space from the start or the end of a string by using padding and trimming functions.
+
+  - [Tagged Template](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/tagged_template.js)
+  - [Nesting Template](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/tagged_template.js)
+  - [Padding & Trimming](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/pad-trim.js)
 
 ## Definition
 
