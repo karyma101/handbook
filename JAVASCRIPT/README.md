@@ -18,9 +18,9 @@ Javascript is a dynamic typed single threaded programming language. Javascript i
 
 Javascript consist of two datatypes primitive types and Object. The primitive values are undefined, string, number, boolean, null, symbol. NaN is the only value that does not equal to itself. The isNaN function first coerces the value into a number and then check if it is NaN. In es6, the Number.isNaN() method tells if value is NaN without the coercion. Negative zero can be used for showing directions.
 
-  - [Data Types](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Dive_deeper/types.js)
-  - [NaN](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Dive_deeper/NaN.js)
-  - [Negative Zero](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Dive_deeper/negative_zero.js)
+  - [Data Types](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/types.js)
+  - [NaN](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/NaN.js)
+  - [Negative Zero](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/negative_zero.js)
 
 ## Execution Context
 
