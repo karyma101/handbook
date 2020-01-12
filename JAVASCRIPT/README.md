@@ -1,6 +1,8 @@
 # Javascript
+
+Javascript is a dynamic typed single threaded programming language. Javascript is parsed line by line. 
+
 ## Table of Content
-  1. [About](#about)
   1. [Primitive Types](#primitive-type-&-value)
   1. [Execution Context](#execution-context)
   1. [Closure](#closure)
@@ -10,10 +12,6 @@
   1. [Destructuring](#destructuring)
   1. [Definitions](#definition)
   1. [Array High Order Functions](#array-high-order-functions)
-
-## About
-
-Javascript is a dynamic typed single threaded programming language. Javascript is parsed line by line. 
 
 ## Primitive Type & Value
 
