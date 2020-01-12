@@ -55,6 +55,6 @@ Template literals are enclosed by the back-tick character and can contain placeh
 
 ## Destructuring
   - [Array Destructuring](https://github.com/karyma101/handbook/blob/master/JAVASCRIPT/Examples/array_destructuring.js)
-
+  - [Object Destructuring](./Examples/object_destructuring.js)
 
 
