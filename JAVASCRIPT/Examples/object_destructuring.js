@@ -7,6 +7,7 @@ var {
   a: first = 1,
   b: second,
   c = 3,
+  g,
   g: {
     h,
     i
@@ -14,4 +15,4 @@ var {
   ...third
 } = data() || {}
 
-console.log({first, second, c, third, h, i})
+console.log({first, second, c, third, g, h, i})
