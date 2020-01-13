@@ -28,3 +28,6 @@
 
 .every()
   - method that tests whether all elements in the array pass the test implemented by the provided function.
+
+[.flat()](./Examples/flat.js)
+  - creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
