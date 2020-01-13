@@ -56,4 +56,6 @@ Template literals are enclosed by the back-tick character and can contain placeh
   - [Object Destructuring](./Examples/object_destructuring.js)
   - [Named Arguments](./Examples/named_arguements.js)
 
+## Iterator
 
+  - [Iterator](./Examples/iterator.js)
