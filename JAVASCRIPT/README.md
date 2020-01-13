@@ -10,8 +10,7 @@ Javascript is a dynamic typed single threaded programming language. Javascript i
   1. [Prototype](#prototype)
   1. [Strings](#strings)
   1. [Destructuring](#destructuring)
-  1. [Definitions](#definition)
-  1. [Array High Order Functions](#array-high-order-functions)
+  1. [Iterators & Generators](#iterators-&-generators)
 
 ## Primitive Type & Value
 
@@ -56,6 +55,8 @@ Template literals are enclosed by the back-tick character and can contain placeh
   - [Object Destructuring](./Examples/object_destructuring.js)
   - [Named Arguments](./Examples/named_arguements.js)
 
-## Iterator
+## Iterators & Generators
 
   - [Iterator](./Examples/iterator.js)
+  - [Declarative Iterator](./Examples/declarative_iterator.js)
+  - [Generators](./Examples/generators.js)
