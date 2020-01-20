@@ -20,7 +20,7 @@
 .sort()
   - Specifies a function that defines the sort order. If omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
 
-.reduce()
+[.reduce()](./Examples/reduce.js)
   - method executes a reducer function (that you provide) on each member of the array resulting in a single output value.
 
 .some()
