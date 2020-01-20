@@ -11,14 +11,16 @@ A regular expression is an object that describe a pattern of characters
 - \W - Not Word Character
 - \s - Whitespaces (space, tab, new line)
 - \S - Not Whitespaces
-- [\b](./anchor.js) - Word Boundary
-- [\B](./anchor.js) - Not Word Boundary
-- [^](./anchor.js) - Beginning of String
-- [$](./anchor.js) - End of String
 - [] - Matches Characters in Brackets
 - [^] - Matches Characters not in Brackets
 - | - Either Or
 - () - Group
+
+### Anchors
+- [\b](./anchor.js) - Word Boundary
+- [\B](./anchor.js) - Not Word Boundary
+- [^](./anchor.js) - Beginning of String
+- [$](./anchor.js) - End of String
 
 ### Quantifiers
 - \* - 0 or more
@@ -36,3 +38,9 @@ A regular expression is an object that describe a pattern of characters
 
 - /[a-zA-Z0-9]/ - ranges can be set inside character sets
 - /[^a-z]/ - will match anything that is not a lowercase value from a to z
+- /\d{3}.\d{3}.\d{4}/ - will match anything with exactly (3 digits) + (anything) + (3 digits) + )(anything) + (4 digits)
+- /M(r|s|rs)\.?\s[A-Z]\w*/ - (will match M) + (r or s or rs) + (0 or One period) + (space) + (letter with captial A - Z) + (0 or more word characters)
+
+## Links
+
+- https://www.youtube.com/watch?v=sa-TUpSx1JA
