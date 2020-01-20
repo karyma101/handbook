@@ -17,3 +17,5 @@ console.log(patt.test("The best things in life are free!"))
 
 // Returns found text as an object. If nothing is found returns null
 console.log(/free/.exec("The best things in life are free!"))
+
+
