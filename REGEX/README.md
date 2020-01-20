@@ -15,18 +15,30 @@ A regular expression is an object that describe a pattern of characters
 - [^] - Matches Characters not in Brackets
 - | - Either Or
 - () - Group
+- \t - Tab
+- \n - Newline
+- \r - Carriage Return
 
-### Anchors
-- [\b](./anchor.js) - Word Boundary
-- [\B](./anchor.js) - Not Word Boundary
-- [^](./anchor.js) - Beginning of String
-- [$](./anchor.js) - End of String
+### [Anchors](./anchor.js)
+- \b - Word Boundary
+- B - Not Word Boundary
+- ^ - Beginning of String
+- $ - End of String
+- \G - Start of Match
+- \A - Start of String
+- \Z - End of String
+- \z - Absolute End of String
 
 ### Quantifiers
 - \* - 0 or more
 - \+ - 1 or more
 - ? - 0 or one
 - {3} - Exact Number
+- {3,} - Match 3 or more
+- {,3} - Match 3 or lessa(?=b)	Match a in baby but not in bay
+a(?!b)	Match a in Stan but not in Stab
+(?<=a)b	Match b in crabs but not in cribs
+(?<!a)b	Match b in fib but not in fab
 - {3,4} - Range of Numbers (Minimum, Maximum)
 
 ## Modifiers
@@ -40,7 +52,12 @@ A regular expression is an object that describe a pattern of characters
 - /[^a-z]/ - will match anything that is not a lowercase value from a to z
 - /\d{3}.\d{3}.\d{4}/ - will match anything with exactly (3 digits) + (anything) + (3 digits) + )(anything) + (4 digits)
 - /M(r|s|rs)\.?\s[A-Z]\w*/ - (will match M) + (r or s or rs) + (0 or One period) + (space) + (letter with captial A - Z) + (0 or more word characters)
+- a(?=b) - Match a in baby but not in bay
+- a(?!b) - Match a in Stan but not in Stab
+- ?<=a)b - Match b in crabs but not in cribs
+- (?<!a)b - Match b in fib but not in fab
 
 ## Links
 
 - https://www.youtube.com/watch?v=sa-TUpSx1JA
+- https://devhints.io/regexp
