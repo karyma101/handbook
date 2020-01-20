@@ -19,7 +19,7 @@ A regular expression is an object that describe a pattern of characters
 - \n - Newline
 - \r - Carriage Return
 
-### [Anchors](./anchor.js)
+### Anchors ([Link](./anchor.js))
 - \b - Word Boundary
 - B - Not Word Boundary
 - ^ - Beginning of String
