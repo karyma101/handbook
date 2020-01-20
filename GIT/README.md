@@ -1,6 +1,6 @@
 # Git
 
-- Git is the industry-standard version control system for web developers.
+Git is the industry-standard version control system for web developers.
 
 ## Commands
 
@@ -39,20 +39,22 @@
 
 ## Notes
 
-![Git Workflow](https://github.com/karyma101/handbook/blob/master/GIT/workflow.png "Git Workflow")
+### Git Workflow
 
-- **Git Workflow**
+![Git Workflow](https://github.com/karyma101/handbook/blob/master/GIT/img/workflow.png "Git Workflow")
+
   - A Working Directory: where you’ll be doing all the work: creating, editing, deleting and organizing files.
   - A Staging Area: where you’ll list changes you make to the working directory.
   - A Repository: where Git permanently stores those changes as different versions of the project.
 
-![Git Reset](https://github.com/karyma101/handbook/blob/master/GIT/reset.png "Git Reset")
+### Git Reset
 
-- **Git Reset**
+![Git Reset](https://github.com/karyma101/handbook/blob/master/GIT/img/reset.png "Git Reset")
 
-![Git Workflow](https://github.com/karyma101/handbook/blob/master/GIT/branching.png "Git Workflow")
+### Git Branching
 
-- **Git Branching**
- - Git branching allows users to experiment with different versions of a project by checking out separate branches to work on.
+![Git Workflow](https://github.com/karyma101/handbook/blob/master/GIT/img/branching.png "Git Workflow")
+
+- Git branching allows users to experiment with different versions of a project by checking out separate branches to work on.
 
 - A **remote** is a shared Git repository that allows multiple collaborators to work on the same Git project from different locations.
