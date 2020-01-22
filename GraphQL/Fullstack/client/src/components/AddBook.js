@@ -1,19 +1,19 @@
-import React,{ Component } from 'react'
-import { gql } from 'apollo-boost'
+import React, { Component } from 'react'
 import { graphql } from 'react-apollo'
-
-const getAuthorsQuery = gql`
-  {
-    authors {
-      name
-      id
-    }
-  }
-`
+import { getAuthorsQuery } from '../queries/index.js'
 
 class AddBook extends Component{
+  displayAuthors(){
+    var data = this.props.data
+    if(data.loading){
+      return <option disabled>Loading Authors...</option>
+    } else {
+      return data.authors.map(author => <option key={author.id} value={author.id}>{author.name}</option>)
+    }
+  }
   
   render(){
+    console.log(this.props.data)
     return (
       <form id="add-book">
         <div className="field">
@@ -30,8 +30,11 @@ class AddBook extends Component{
           <label>Author:</label>
           <select>
             <option>Select Author</option>
+            {this.displayAuthors()}
           </select>
         </div>
+
+        <button>+</button>
       </form>
     )
   }
