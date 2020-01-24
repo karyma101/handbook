@@ -1,14 +1,12 @@
-import React from 'react';
-import BookList from './components/BookList';
-import Navbar from './components/Navbar';
+import React from 'react'
+import SongList from './components/SongList'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Navbar />
-      <BookList />
+      <SongList />
     </div>
-  );
+  )
 }
 
 export default App;
