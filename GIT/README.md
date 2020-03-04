@@ -51,12 +51,6 @@ Git is the industry-standard version control system for web developers.
 
 ![Git Reset](https://github.com/karyma101/handbook/blob/master/GIT/img/reset.png "Git Reset")
 
-### Git Branching
-
-![Git Workflow](https://github.com/karyma101/handbook/blob/master/GIT/img/branching.png "Git Workflow")
-
-- Git branching allows users to experiment with different versions of a project by checking out separate branches to work on.
-
 - A **remote** is a shared Git repository that allows multiple collaborators to work on the same Git project from different locations.
 
 
