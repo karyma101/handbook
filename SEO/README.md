@@ -34,4 +34,22 @@
 <meta property=""/>
 ```
 
-- Modern crawlers run javascript for single page applications and picks up the html that is returned. If client side rendering is slow its better to look at server side rendering. 
+- Modern crawlers run javascript for single page applications and picks up the html that is returned. If client side rendering is slow its better to look at server side rendering.
+
+- Opengraph
+- Quality, Trusted Content, Clarity, Easy to Read, Multiple Languages Support
+- Accessible
+- Responsiveness
+- Keywords
+- Cononical Links
+- Include contact information
+- High Impactful sites linking to your site
+- Sitemaps
+- Robot.txt
+- Adding Fresh Unique Content
+- Users that spend more time on site
+- Meta tags / descriptions
+- Increase performance
+- Internal Links will encourage users to browse more pages on the website
+- 16px - 18px font
+- videos and interactive media
