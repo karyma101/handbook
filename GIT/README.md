@@ -33,6 +33,16 @@ git reset HEAD <file>
 
 The file git knows about. Contains all of your commits.
 
-### Git Stash
+### References
 
-Save uncommited work. The stash is safe from destructive operations.
+**Branch** is just a pointer to a particular commit. The pointer of the current branch changes as new commits are made.
+
+**Head** is how git knows what branch you're currently working on, and what the next parent will be. Its a pointer, it usually points to the name of the current branch. But it can also point at a commit too (detached HEAD). It moves when you make a commit in the current active branch or when you checkout a new branch.
+
+###  Tags
+
+- git tag: shows all tag
+- git tag <name>: creates a tag
+- git show  <name>: look at tag in detail
+- git tag -a <name> -m '<message>' : creating annotated tags
+- git tag --points-at <hash> : shows all tags pointing at hash commit

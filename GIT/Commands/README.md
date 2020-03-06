@@ -32,3 +32,4 @@
   - **git remote show origin**: shows origin information
   - **git remote rm origin**: removes remote to origin
   - **git remote add origin path_to_new_remote**: adds new remote / used for repository name change
+- **git cat-file -p <sha1 hash>**
