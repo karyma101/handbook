@@ -34,3 +34,7 @@ git reset HEAD <file>
 #### The Repository
 
 The file git knows about. Contains all of your commits.
+
+### Git Stash
+
+Save uncommited work. The stash is safe from destructive operations.
