@@ -12,8 +12,6 @@ Git is the industry-standard version control system for web developers.
 
 ### Git Reset
 
-![Git Reset](https://github.com/karyma101/handbook/blob/master/GIT/img/reset.png "Git Reset")
-
 - A **remote** is a shared Git repository that allows multiple collaborators to work on the same Git project from different locations.
 
 ## Git Areas
