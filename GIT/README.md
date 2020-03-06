@@ -2,8 +2,6 @@
 
 Git is the industry-standard version control system for web developers.
 
-## Notes
-
 ### Git Workflow
 
 ![Git Workflow](https://github.com/karyma101/handbook/blob/master/GIT/img/workflow.png "Git Workflow")
