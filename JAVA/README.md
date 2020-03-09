@@ -66,6 +66,7 @@ do {
 
 ### Utilities
 
+Scanner
 ```Java
 import java.util.Scanner;
 
