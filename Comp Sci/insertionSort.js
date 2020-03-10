@@ -6,6 +6,8 @@ const insertionSort = (nums) => {
       counter++
       if(nums[i] < nums[j]){
         const spliced = nums.splice(i, 1)
+        console.log(spliced)
+        console.log(nums)
         nums.splice(j, 0, spliced[0])
       }
     }
