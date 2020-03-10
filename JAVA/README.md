@@ -1,11 +1,15 @@
 # Java
 
+Java is an object oriented static typed language.
+
 ## Data Types
 Primitive Data types, unchangable
-- int : integer
+- int : Whole numbers, holds positive, negative numbers and zero
+- double: Holds decimal numbers. The maximum value is 1.797,693,134,862,315,7 E+308, which is approximately 17 followed by 307 zeros. The minimum value is 4.9 E-324, which is 324 decimal places
 - float : floating decimal point
 - boolean : true or false
-- char : characters, can only be 1 character, single quotations
+- char : a single character must be surrounded by single quotations
+- String: stores multiple characters using double quotations
 
 ## Comments
 - // : Single-line Comments
