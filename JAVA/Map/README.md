@@ -4,6 +4,8 @@ Creates a key value pair. Maps are fast. HashMap is unordered and contains only 
 
 ```Java
   Map m = new HashMap();
+  m.clear();
+  m.isEmpty();
   m.put("Kary", 5); // m.put(key, value), adding key and value to maps.
   m.put("Megan", "N");
   m.put("Wilson", 1);
@@ -11,6 +13,8 @@ Creates a key value pair. Maps are fast. HashMap is unordered and contains only 
 
   m.containsValue(5); // m.containsValue(value), returns true or false if map contains value.
   m.containsKey("Kary"); // m.containsValue(key), returns true or false if map contains key.
+
+  m.values(); // will return all values in map.
 
   System.out.print(m)
   // {Kary=5, Megan=N, Wilson=1}

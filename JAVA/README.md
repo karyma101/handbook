@@ -68,7 +68,22 @@ do {
 
 Scanner
 ```Java
-import java.util.Scanner;
+  import java.util.Scanner;
 
-Scanner sc = new Scanner(System.in);
+  Scanner sc = new Scanner(System.in);
 ```
+
+```Java
+  int[] nums = {5,15,3,6,12,6,1,4};
+  
+  //sorts and modifies the original array
+  Arrays.sort(nums);
+  
+  for(int i:nums) {
+    System.out.println(i);
+  }
+
+  // This will print out the reference in memory
+  System.out.println(nums);
+```
+
