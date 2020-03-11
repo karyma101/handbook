@@ -27,18 +27,27 @@ Primitive Data types, unchangable
 
 stringVariable.equals("string")
 
-### If Statements
+### Conditionals and Control Flows
 
 ```Java
 if() {
 } else if {
-
+  // Do Something
 } else {
+  // Do Something
+}
 
+switch(condition){
+  case a:
+    // Do Something
+    break;
+  default:
+    // Do Something
+    break;
 }
 ```
 
-### Array
+### Array and ArrayList
 ```Java
 // x speciify max length of array
 String[] names = new String[x];
@@ -46,6 +55,29 @@ String[] names = new String[x];
 int[] nums = {1,2,3,4,5};
 
 names[2] = "kary";
+```
+
+
+```Java
+//To print out arrays
+import java.util.Arrays
+
+Arrays.toString(names);
+```
+ArrayList
+
+```Java
+import java.util.ArrayList
+
+// <Integer> are generics, Generics are a Java construct that allows us to define classes and objects as parameters of an ArrayList
+ArrayList<Integer> myArr = new ArrayList<Integer>();
+
+myArr.add(); // Adds item to end of array
+myArr.size(); // Returns the length of array
+myArr.get(x); // Returns item in x index
+myArr.set(x, value); // Changes in the value in x index;
+myArr.remove(x); // x can be index or value;
+myArr.indexOf(value) // return index with value;
 ```
 
 ### Loops

@@ -24,6 +24,7 @@ Creating Classes.
 ```Java
   // Dog.java
   public class Dog {
+    // Instances
     private String name;
     private int age;
     
@@ -87,6 +88,7 @@ public class Student implements Comparable<Student>{
 		return this.name.compareTo(other.name);
 	}
 	
+  // default method when you printout class object
 	public String toString() {
 		return this.name;
 	}
