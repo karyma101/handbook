@@ -23,10 +23,6 @@ Primitive Data types, unchangable
 - && : and
 - || : or
 
-### Comparing Strings
-
-stringVariable.equals("string")
-
 ### Conditionals and Control Flows
 
 ```Java
@@ -123,3 +119,15 @@ Scanner
   System.out.println(nums);
 ```
 
+### String Methods
+
+```Java
+.length() // Length of string
+.concat() // firstName.concat(lastName), concatenate 2 strings together
+.equals() // comparing strings
+.indexOf() // returns index, returns -1 if not found
+.charAt() // returns character at index
+.substring(x, y) // returns string values between x and y
+.toUpperCase()
+.toLowerCase()
+```
