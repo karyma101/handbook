@@ -1,10 +1,11 @@
 # Classes
 
-Classes define the state and behavior of their instances. Behavior comes from methods defined in the class. State comes from instance fields declared inside the class. If we add final before a parent class method’s access modifier, we disallow any child classes from changing that method.
+Classes define the state and behavior of their instances. Behavior comes from methods defined in the class. State comes from instance fields declared inside the class. If we add final before a parent class method’s access modifier, we disallow any child classes from changing that method. A Java class can inherit fields and methods from another class. Each Java class requires its own file, but only one class in a Java package needs a main() method. Child classes inherit the parent constructor by default, but it’s possible to modify the constructor using super() or override it completely. You can use protected and final to control child class access to parent class members.
 
-Polymorphism, allows a child class to share the information and behavior of its parent class while also incorporating its own functionality. Simplifies syntax and reduces cognitive overload for developers.
+Polymorphism, allows a child class to share the information and behavior of its parent class while also incorporating its own functionality. Simplifies syntax and reduces cognitive overload for developers. Java’s OOP principle of polymorphism means you can use a child class object like a member of its parent class, but also give it its own traits. You can override parent class methods in the child class, ideally using the @Override keyword. Method override, in order to properly override the method name, return type, number and type of parameters.
 
-Method override, in order to properly override the method name, return type, number and type of parameters.
+It’s possible to use objects of different classes that share a parent class together in an array or ArrayList.
+
 ```Java
 class BankAccount {
 
