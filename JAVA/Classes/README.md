@@ -1,6 +1,28 @@
 # Classes
 
-Classes define the state and behavior of their instances. Behavior comes from methods defined in the class. State comes from instance fields declared inside the class.
+Classes define the state and behavior of their instances. Behavior comes from methods defined in the class. State comes from instance fields declared inside the class. If we add final before a parent class method’s access modifier, we disallow any child classes from changing that method.
+
+Polymorphism, allows a child class to share the information and behavior of its parent class while also incorporating its own functionality. Simplifies syntax and reduces cognitive overload for developers.
+
+Method override, in order to properly override the method name, return type, number and type of parameters.
+```Java
+class BankAccount {
+
+  protected double balance;
+
+  public void printBalance() {
+    System.out.println("Your account balance is $" + balance);
+  }
+}
+
+class CheckingAccount extends BankAccount {
+
+  @Override
+  public void printBalance() {
+    System.out.println("Your checking account balance is $" + balance);
+  }
+}
+```
 
 ```Java
   public class Main {
