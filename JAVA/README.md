@@ -119,15 +119,29 @@ Scanner
   System.out.println(nums);
 ```
 
-### String Methods
+### Debugging
+
+Syntax errors: Errors found by the compiler.
+Run-time errors: Errors that occur when the program is running.
+Logic errors: Errors found by the programmer looking for the causes of erroneous results.
+
+When we are writing Java programs, the compiler is our first line of defense against errors. It can catch syntax errors. Syntax errors represent grammar errors in the use of the programming language. They are the easiest to find and correct. The compiler will tell you where it got into trouble, and its best guess as to what you did wrong.
+
+Errors which happen during program execution (run-time) after successful compilation are called run-time errors. Run-time errors occur when a program with no compile-time errors asks the computer to do something that the computer is unable to reliably do. Exceptions are the conditions that occur at runtime and may cause the termination of the program. When an exception occurs, Java displays a message that includes the name of the exception, the line of the program where the exception occurred, and a stack trace.
 
 ```Java
-.length() // Length of string
-.concat() // firstName.concat(lastName), concatenate 2 strings together
-.equals() // comparing strings
-.indexOf() // returns index, returns -1 if not found
-.charAt() // returns character at index
-.substring(x, y) // returns string values between x and y
-.toUpperCase()
-.toLowerCase()
+public class Debug {
+  public static void main(String[] args) {
+    
+    int width = 0;
+    int length = 40;
+    
+    try {
+      int ratio = length / width;
+    } catch(ArithmeticException e) {
+      System.err.println("ArithmeticException: " + e.getMessage());
+    }   
+  }
+}
 ```
+
