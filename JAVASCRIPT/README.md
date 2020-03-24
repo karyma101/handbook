@@ -1,6 +1,6 @@
 # Javascript
 
-Javascript is a dynamic typed single threaded programming language. Javascript is parsed line by line. 
+Javascript is a dynamic typed single threaded programming language. Javascript is an interpreted language and is read line by line. Each browser has its own Javascript engine which either interprets the code or use some sort of lazy compilation.
 
 ## Table of Content
   1. [Primitive Types](#primitive-type-&-value)
