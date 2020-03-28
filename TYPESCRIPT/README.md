@@ -1,5 +1,10 @@
 # Typescript
 
+```
+  tsc --init
+  // Generates a typescript config file
+```
+
 ## Basic Types
 
 ```Typescript

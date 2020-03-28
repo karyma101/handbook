@@ -38,6 +38,10 @@ print(25 * 2) # 50
 print(10 / 5) # 2.0 , python converts all ints to floats before performing division
 print(2 ** 4) # 16, exponents
 
+#Booleans, must be in capitals
+x = True
+y = False
+
 # Declaring Functions
 def get_boundaries(target, margin="20"):
   # Code must be indented
@@ -47,4 +51,27 @@ def get_boundaries(target, margin="20"):
 
 low, high = get_boundaries(100, 20) # Assigning multiple values to variables
 
+# Operators
+==
+!=
+>
+<
+>=
+<=
+and
+or
+not
+
+# Conditionals
+if:
+  return
+elif:
+  return
+else:
+  return
+
+try:
+  # Block of code
+except ValueError: # Type of Error
+  # Block of code
 ```
