@@ -74,4 +74,44 @@ try:
   # Block of code
 except ValueError: # Type of Error
   # Block of code
+
+# Lists
+firstName = ['Kary', 'John']
+lastName = ['Ma', 'Smith']
+# Zip ties multiple lists together and creates an object
+fullName = zip(firstName, lastName)
+# List function will convert object back into list
+list(fullName) 
+
+x = []
+x.append(1) # [1]
+# + can be used to concate another list to a list
+y = x + [2,3,4] # [1,2,3,4]
+
+# Range creates an object from ranges 0 - 8 and skips the next 2
+x = range(2, 9, 2)
+y = list(x) # [2, 4, 6, 8]
+
+# Will give the length of the list
+len(x)
+
+
+x[-1] # Gives last element of an list
+x[start:end] # Slice the list from start to end, returns a list
+x[:3] # Takes first 3 elements of an list, returns a list
+x[-3:] # Takes last 3 elements of an list, returns a list
+x.count('a') # Search array for value and tally 
+x.sort() # Does not return anything but sorts original list, will sort from low to high from first element in each sublist
+sorted(x) # Generate new array without modifying original list
+
+# Tuple
+x = ('Kary', 25) # Immutable structured list
+x[1] # Will return 25
+name, age = x # Unpacking a tuple, name will return first value, age will return second value
+X = (1,) # Trailing Comma, One element tuple
+
+# Loops
+# Loops that create new lists, called list comprehensions
 ```
+
+
