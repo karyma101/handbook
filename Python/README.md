@@ -135,6 +135,13 @@ celsius = [0, 10, 15, 32, -5, 27, 3]
 fahrenheit = [temp * 9 / 5 + 32 for temp in celsius ]
 
 print(fahrenheit)
+
+# String
+# String are immutable when they are created
+string_name[first_index:last_index] # Slicing the string
+string[-1] # Last character in a string
+def contains(big_string, little_string):
+  return little_string in big_string # Boolean expression that returns if little_string is found in big_string
 ```
 
 
