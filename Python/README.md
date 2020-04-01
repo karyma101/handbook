@@ -74,4 +74,7 @@ try:
   # Block of code
 except ValueError: # Type of Error
   # Block of code
+
+# Lists
+x = ["one", 2, [3, 4]]
 ```
