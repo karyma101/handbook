@@ -144,6 +144,20 @@ string_name[first_index:last_index] # Slicing the string
 string[-1] # Last character in a string
 def contains(big_string, little_string):
   return little_string in big_string # Boolean expression that returns if little_string is found in big_string
+
+# Decimals
+from decimal import Decimal
+x = 0.10 + 0.35 # Will result in 0.44999999999999996
+x = Decimal('0.10') + Decimal('0.35')
+
+from datetime import datetime
+x = datetime(1995,3,25)
+x.day
+x.weekday()
+datetime.now()
+datetime.now() - date(2018, 1, 1) # Will give you the difference between both dates
+x = datetime.strptime('Jan 5, 2018', '%b %d, %Y') # Will convert string into datetime object format
+x = datetime.strftime(datetime.now(), '%b %d, %Y') # Will convert datetime object to string
 ```
 
 
