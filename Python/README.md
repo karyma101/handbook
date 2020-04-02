@@ -158,6 +158,23 @@ datetime.now()
 datetime.now() - date(2018, 1, 1) # Will give you the difference between both dates
 x = datetime.strptime('Jan 5, 2018', '%b %d, %Y') # Will convert string into datetime object format
 x = datetime.strftime(datetime.now(), '%b %d, %Y') # Will convert datetime object to string
+string.lower() # Returns all lowercase
+string.upper() # Returns all uppercase
+string.title() # Returns first letter in each word capitalized
+string.split() # Delimiter split string into an array by spaces on default
+.split('\n') # Split string by line
+' '.join(string) # Join array into string with a space
+string.strip() # By default strips all whitespace on each side of string
+string.replace(character_being_replaced, new_character)
+string.find(x) # returns the first index found 
+
+def poem_title_card(poet, title): # String interpolation
+  return 'The poem "{string}" is written by {poet}.'.format(title=title, poet=poet)
+
+# Module
+from module_name import object_name
+current_time = datetime.now()
+print(current_time)
 ```
 
 
