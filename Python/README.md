@@ -76,6 +76,8 @@ except ValueError: # Type of Error
   # Block of code
 
 # Lists
+x = ["one", 2, [3, 4]]
+
 firstName = ['Kary', 'John']
 lastName = ['Ma', 'Smith']
 # Zip ties multiple lists together and creates an object
