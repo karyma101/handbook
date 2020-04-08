@@ -161,6 +161,30 @@ def poem_title_card(poet, title): # String interpolation
 from module_name import object_name
 current_time = datetime.now()
 print(current_time)
+
+# Pipenv
+python -m pip install pipenv
+pipenv --three # initialize virtual environment with python 3
+pipenv install <package name>==<version number>
+
+# Dictionaries, unordered set of key:value pairs
+x = { key: value, key: value }
+x[key] = value # Adding key and value to dict, can be used to update an existing key value pair
+x.update({key: value, key: value}) # Adding Multiple values to dict
+students = {key:value for key, value in zip(names, heights)} # Combining two lists to create a dict object
+
+if key_in_object in object:
+x.get(key, default value) # Gets a key from dict if nothing is found you can specify a default value
+x.pop() # Removes key from dict
+list(dictObject) # Returns a list of every key in dict
+x.keys() # Same as above
+x.values() # Returns a list of every value in dict
+
+pct_women_in_occupation = {"CEO": 28, "Engineering Manager": 9, "Pharmacist": 58, "Physician": 40, "Lawyer": 37, "Aerospace Engineer": 9}
+
+for key, value in pct_women_in_occupation.items(): 
+  print('Women make up ' + str(value) + ' percent of ' + key + 's.')
+
 ```
 
 
