@@ -185,6 +185,30 @@ pct_women_in_occupation = {"CEO": 28, "Engineering Manager": 9, "Pharmacist": 58
 for key, value in pct_women_in_occupation.items(): 
   print('Women make up ' + str(value) + ' percent of ' + key + 's.')
 
+
+# Types
+type(x) # checks the type of variable
+
+# Class
+# A class is a template for a data type. It describes the kinds of information that class will hold and how a programmer will interact with that data.
+
+x = className() # Initalizing a class
+
+class x:
+  y = "Hello"
+  def __init__(self): # Constructor
+
+  def __repr__(self): # String representation of the object
+
+  def hello(self, z):
+    pass # Will prevent errors if empty class
+    print(self.y + z)
+
+x.hello("World")
+
+hasattr()
+getattr()
+dir(x) # Shows all attributes of an object
 ```
 
 
