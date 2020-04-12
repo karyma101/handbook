@@ -194,6 +194,8 @@ type(x) # checks the type of variable
 
 x = className() # Initalizing a class
 
+__x__ #  Dunder Methods
+
 class x:
   y = "Hello"
   def __init__(self): # Constructor
@@ -206,9 +208,10 @@ class x:
 
 x.hello("World")
 
-hasattr()
+hasattr(x,y) # returns true if object x has attribute y
 getattr()
 dir(x) # Shows all attributes of an object
+issubclass(x,y) # returns true if x is a subclass of y
 ```
 
 
