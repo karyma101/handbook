@@ -21,7 +21,7 @@ More error checking
     - `\` Backslash is used to escape characters.
   - `print(r'C:\some\name')`
     - The r infront of quotations is an raw String which ignores backslashes.
-  - [String Literals]('./StringLiteral.py')
+  - [String Literals](./StringLiteral.py)
 
 
 
