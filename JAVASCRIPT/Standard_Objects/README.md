@@ -9,7 +9,7 @@ These global properties return a simple value. They have no properties or method
 - undefined
 - globalThis
 
-## [Function Properties]('./Function_Properties/parseFloat.js')
+## [Function Properties](/Function_Properties/parseFloat.js)
 
 These global functions—functions which are called globally, rather than on an object—directly return their results to the caller.
 
