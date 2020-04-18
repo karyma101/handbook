@@ -1,5 +1,32 @@
 # Python
 
+Interpreted language, saves time because no compilation or linking necessary
+Dynamic typed programming language
+More error checking
+
+## Features
+
+- Comments
+  - `#This is a comment`{.python}
+
+- Operators
+  - `+`
+  - `-`
+  - `*`
+  - `/`
+  - `**`
+
+- Strings
+  - `print('Don\'t')`
+    - `\` Backslash is used to escape characters.
+  - `print(r'C:\some\name')`
+    - The r infront of quotations is an raw String which ignores backslashes.
+  - [String Literals](./StringLiteral.py)
+
+
+
+
+
 ```python
 # Semi colon is optional
 
