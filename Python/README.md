@@ -1,244 +1,150 @@
 # Python
 
-Interpreted language, saves time because no compilation or linking necessary
-Dynamic typed programming language
-More error checking
+Interpreted language, saves time because no compilation or linking necessary, tradeoff compared to complied languages is that it is generally slower. Python is an dynamic typed programming language.
+Indentation is used to define scope in python.
 
 ## Features
 
+### General
+
+- User Input, will always store value as a string
+    - `x = input('What is your name?')`
 - Comments
-  - `#This is a comment`{.python}
+    - `#This is a comment`{.python}
+- `type(x)`
+    - returns the data type of variable
 
-- Operators
-  - `+`
-  - `-`
-  - `*`
-  - `/`
-  - `**`
+### Operators
 
-- Strings
-  - `print('Don\'t')`
-    - `\` Backslash is used to escape characters.
-  - `print(r'C:\some\name')`
-    - The r infront of quotations is an raw String which ignores backslashes.
-  - [String Literals](./StringLiteral.py)
+- Arithmetic Operators
+    - `+`
+    - `-`
+    - `*`
+    - `/`
+    - `//`
+        - Floor division, rounds down the result of division
+    - `**`
+        - Exponents
+    - `%`
+        - Modulus, gives remainder of division
 
+- Comparison Operators
+    - `==`
+    - `!=`
+    - `>`
+    - `>=`
+    - `<`
+    - `<=`
 
+- Assignment Operators
+    - `=`
+    - `+=`
+    - `-=`
+    - `*=`
+    - `/=`
+    - `%=`
+    - `//=`
+    - `**=`
 
+- Logical Operators
+    - `and`
+    - `or`
+    - `not`
 
+- Membership Operators  
+*These operators provide and easy way to check if certain object is present in a sequence: string, list, tuple, set and dictionary.*
+    - `in`
+        - returns `True` if object is present
+    - `not in`
+        - returns `True` if object is not present
 
-```python
-# Semi colon is optional
+### Conditionals
 
-# Can be single or double quotes
-print("") 
-print('')
+Controls the program flow of your application, examples [here](./Examples/Conditionals.py)
 
-x = """
-This
-is 
-a 
-multiline
-string
-"""
+- `if` `elif` `else` statement
+- Ternary Operators, 1 line if statement
+    - `result = a if True else b`
 
-y = '''
-This
-is
-also 
-a 
-multiline
-string
-'''
+### Boolean
 
-str(x) # Converts to string
-stringVariable * 10 # String will be repeated 10 times
+- Boolean Declarations
+    - `x = True`
+    - `x = bool(1024)`
 
-# String Concatenation
-print(string1 + string2)
+### Int
 
-# Declaring Variables
-x = ""
-y = 1
+- Int Declarations
+    - `x = 1`
+    - `x = int(1)`
+- `int(x)`
+    - Explicit conversion, converts string into a number, if float value it will always round down
 
-print(25 * 2) # 50
-print(10 / 5) # 2.0 , python converts all ints to floats before performing division
-print(2 ** 4) # 16, exponents
+### Float
 
-#Booleans, must be in capitals
-x = True
-y = False
+- Float declarations
+    - `x = 3.2`
+    - `x = float(3.2)`
+- `float(x)`
+    - Explicit conversion, convert int or string into a float value
 
-# Declaring Functions
-def get_boundaries(target, margin="20"):
-  # Code must be indented
-  low_limit = target - margin
-  high_limit = margin + target
-  return low_limit, high_limit # Returning multiple Values
+### Complex
 
-low, high = get_boundaries(100, 20) # Assigning multiple values to variables
+- Complex declarations
+    - `x = 32+4j`
+    - `x = complex(32+4j)`
 
-# Operators
-==
-!=
->
-<
->=
-<=
-and
-or
-not
+### Strings
 
-# Conditionals
-if:
-  return
-elif:
-  return
-else:
-  return
+- String declarations
+    - `x = 'string'` can be single or double quote
+    - `x = str('string')`
+- `str(x)`
+    - Explicit conversion, converts number to string whether it is a float or int
+- `\` Backslash is used to escape characters.
+    - `print('Don\'t')`
+- Raw string, ignores backslashes
+    - `print(r'C:\some\name')`
+- `len(x)`
+    - returns the length of the string
+- `x.replace(y, z)`
+    - replaces y with z in a string and returns the new output
+- `x.upper()`
+    - returns string with all uppercase characters
+- `x.lower()`
+    - returns string with all lowercase characters
+- 
+- [String Literals](./Examples/StringLiteral.py)
 
-try:
-  # Block of code
-except ValueError: # Type of Error
-  # Block of code
+### Lists
 
-# Lists
-x = ["one", 2, [3, 4]]
+Ordered, mutatable and allows repetition
 
-firstName = ['Kary', 'John']
-lastName = ['Ma', 'Smith']
-# Zip ties multiple lists together and creates an object
-fullName = zip(firstName, lastName)
-# List function will convert object back into list
-list(fullName) 
-
-x = []
-x.append(1) # [1]
-# + can be used to concate another list to a list
-y = x + [2,3,4] # [1,2,3,4]
-
-# Range creates an object from ranges 0 - 8 and skips the next 2
-x = range(2, 9, 2)
-y = list(x) # [2, 4, 6, 8]
-
-# Will give the length of the list
-len(x)
+- List declarations
+    - `x = [item1, item2]`
+    - `x = list((item1, item2))`
 
 
-x[-1] # Gives last element of an list
-x[start:end] # Slice the list from start to end, returns a list
-x[:3] # Takes first 3 elements of an list, returns a list
-x[-3:] # Takes last 3 elements of an list, returns a list
-x.count('a') # Search array for value and tally 
-x.sort() # Does not return anything but sorts original list, will sort from low to high from first element in each sublist
-sorted(x) # Generate new array without modifying original list
+### Tuples
 
-# Tuple
-x = ('Kary', 25) # Immutable structured list
-x[1] # Will return 25
-name, age = x # Unpacking a tuple, name will return first value, age will return second value
-X = (1,) # Trailing Comma, One element tuple
+Ordered and allows repetition but immutable
 
-# Loops
-# Loops that create new lists, called list comprehensions
-for <temporary variable> in <list variable>:
-    <action>
+- Tuple declarations
+    - `x = ( item1, item2 )`
+    - `x = tuple((item1, item2))`
+    
+### Dictionaries
 
-# Loop through 3 times
-for i in range(3):
-  <action>
-  continue # Skips the current value
-  break # Can break out of the loop
+Unordered, key value pairs and mutable
 
-# List Comprehensions
-# Ex 1
-heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+Dictionary declarations
+    - `x = { "key": "value, key2: "value" }`
+    - `x = dict(key = "value", key2 = "value")`
 
-can_ride_coaster = [height for height in heights if height > 161]
+### Sets
 
-print(can_ride_coaster)
+Unordered, items are not indexed and they don't allow repetition of items
 
-# Ex 2
-celsius = [0, 10, 15, 32, -5, 27, 3]
-
-fahrenheit = [temp * 9 / 5 + 32 for temp in celsius ]
-
-print(fahrenheit)
-
-# String
-# String are immutable when they are created
-string_name[first_index:last_index] # Slicing the string
-string[-1] # Last character in a string
-def contains(big_string, little_string):
-  return little_string in big_string # Boolean expression that returns if little_string is found in big_string
-string.lower() # Returns all lowercase
-string.upper() # Returns all uppercase
-string.title() # Returns first letter in each word capitalized
-string.split() # Delimiter split string into an array by spaces on default
-.split('\n') # Split string by line
-' '.join(string) # Join array into string with a space
-string.strip() # By default strips all whitespace on each side of string
-string.replace(character_being_replaced, new_character)
-string.find(x) # returns the first index found 
-
-def poem_title_card(poet, title): # String interpolation
-  return 'The poem "{string}" is written by {poet}.'.format(title=title, poet=poet)
-
-# Module
-from module_name import object_name
-current_time = datetime.now()
-print(current_time)
-
-# Pipenv
-python -m pip install pipenv
-pipenv --three # initialize virtual environment with python 3
-pipenv install <package name>==<version number>
-
-# Dictionaries, unordered set of key:value pairs
-x = { key: value, key: value }
-x[key] = value # Adding key and value to dict, can be used to update an existing key value pair
-x.update({key: value, key: value}) # Adding Multiple values to dict
-students = {key:value for key, value in zip(names, heights)} # Combining two lists to create a dict object
-
-if key_in_object in object:
-x.get(key, default value) # Gets a key from dict if nothing is found you can specify a default value
-x.pop() # Removes key from dict
-list(dictObject) # Returns a list of every key in dict
-x.keys() # Same as above
-x.values() # Returns a list of every value in dict
-
-pct_women_in_occupation = {"CEO": 28, "Engineering Manager": 9, "Pharmacist": 58, "Physician": 40, "Lawyer": 37, "Aerospace Engineer": 9}
-
-for key, value in pct_women_in_occupation.items(): 
-  print('Women make up ' + str(value) + ' percent of ' + key + 's.')
-
-
-# Types
-type(x) # checks the type of variable
-
-# Class
-# A class is a template for a data type. It describes the kinds of information that class will hold and how a programmer will interact with that data.
-
-x = className() # Initalizing a class
-
-__x__ #  Dunder Methods
-
-class x:
-  y = "Hello"
-  def __init__(self): # Constructor
-
-  def __repr__(self): # String representation of the object
-
-  def hello(self, z):
-    pass # Will prevent errors if empty class
-    print(self.y + z)
-
-x.hello("World")
-
-hasattr(x,y) # returns true if object x has attribute y
-getattr()
-dir(x) # Shows all attributes of an object
-issubclass(x,y) # returns true if x is a subclass of y
-```
-
-
+- Sets declarations
+    - `x = { "strings", numbers }`
+    - `x = set(("strings", numbers))`
