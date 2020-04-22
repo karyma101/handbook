@@ -1,1 +1,1 @@
-x = input('what is your name?')
+x = [print('hello') for i in range(5)]
