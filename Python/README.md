@@ -256,5 +256,110 @@ for item in list:
 - Python lambda functions are anonymous and can only have one expression. Example [here]('./Examples/Lambda.py)
 - `lambda arguments: expression`
 
+### Classes
+
+- Creating a class
+    - `class className:`
+- Creating a class object
+    - `x = ClassName(<optional>)`
+- Inheritance
+    - `class Child(Parent):`
+- It good practice to name your files after your classses
+- Most of the time you will see `self` as the first argument, it is the reference to the current object that is created
+- `__init__`
+    - initialization is called whenever object is created, often used to initialize attributes
+
+### Modules
+
+- To export simply just import filename, no export keyword needed. [Exporting Example](./Examples/Module_Export.py) and [Importing Example](./Examples/Module_Import.py)
+- `import` keyword to import module
+- `as` keyword for creating an alias for module
+- `from` keyword imports specific classes or methods from module
+- ```python
+    from math import floor
+
+    floor(9.68)
+  ```
+
+### Exceptions
+
+Types of Exceptions
+- `TypeError`, `IndexError`, `NameError`, `ZeroDivisionError` 
+- `raise` keyword allows you to manually raise an exception
+    - ```python 
+        try:
+            raise IndexError('This index is not allowed')
+        except:
+            print('Doing something with the exception!')
+            raise
+      ```
+- `finally` block is executed whether exceptions being raised or not
+    - ```python 
+        try:
+            print(my_variable)
+        except NameError:
+            print('Except block')
+        finally:
+            print('Finally block')
+      ```
+
+### Files
+
+- `file_name = open('filename', '<2nd Argument>')`
+- If 2nd Argument is:
+    - `x` create a file and will throw an exception if file already exist
+    - `w` create a file if file does not exist or overwrite existing file
+    - `a` append data to the file or create if file does not exist
+    - `r` read file if file does not exist it will throw an error
+- `write` mode
+    - ```python
+        file_name = open("filename", "w")
+        file_name.write("Hello World \n")
+        file_name.close()
+      ```
+- `append` mode
+    - ```python
+        file_name = open("filename", "w")
+        file_name.write("Hello World \n")
+        file_name.close()
+      ```
+- `read` mode
+    - ```python
+        file_name = open("filename", "r")
+        # Read whole file
+        print(file_name.read())
+        # Read One line at a time
+        print(file_name.readline())
+
+        # Can loop through every line
+        for item in  file_name:
+            print(item)
+      ```
+- To delete files you must have the `os` module
+    - ```python
+        import os
+        os.remove('file_name')
+      ```
+- To check if file exist
+    - ```python
+        import os
+
+        if os.path.exists('file_name'):
+            os.remove('file_name')
+        else:
+            print('There is no such file!')
+      ```
+- Copying Files
+    - ```python
+        from shutil import copyfile
+
+        copyfile('file_name', 'another_file')
+      ```
+- Rename and move a file
+    - ```python
+        from shutil import move
+
+        move('file_name', 'another_file')
+      ```
 ### Stuff
 - [range()](./Examples/range.py)
