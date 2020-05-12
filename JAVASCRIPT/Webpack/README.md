@@ -24,3 +24,22 @@
 - `npm i -D html-webpack-plugin`
     - Automatically generates a new index.html file
     - To customize the html file you must use [html-webpack-template](https://github.com/jaketrent/html-webpack-template)
+
+- `npm i -D clean-webpack-plugin`
+    - Keeps the dist folder tidy
+
+## [Development](./development/webpack.config.js)
+
+- Source Maps
+    - Allows us to track the origin of the error from the bundled file
+- `webpack --watch`
+    - npm script that compiles file automatically, only downside is that you have to refresh your browser
+- `npm i -D webpack-dev-server`, `webpack-dev-server --open`
+    - provides you with a simple web server and the ability to use live reloading
+
+## [Code Splitting](./code_splitting/webpack.config.js)
+
+- Three general approaches for code splitting
+    - Entry points, manually split code using entry configuration
+    - Prevent duplication, use the `SplitChunkPlugin` to dedupe and split chunks
+    - Dynamic Imports, Split code via inline function calls within modules
