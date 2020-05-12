@@ -7,7 +7,7 @@
 - `npx webpack --config webpack.config.js`
     - Can use config files with different names, by default it will use webpack.config.js
 
-## [Asset Management](/asset_management/webpack.config.js)
+## [Asset Management](./asset_management/webpack.config.js)
 
 - `npm i -D css-loader style-loader`
     - Dynamically creates `<style>` in your head with all your imported and bundled css.
@@ -19,7 +19,7 @@
 - `npm i -D csv-loader xml-loader`
     - Loading Data
 
-## [Output Management](/output_management/webpack.config.js)
+## [Output Management](./output_management/webpack.config.js)
 
 - `npm i -D html-webpack-plugin`
     - Automatically generates a new index.html file
