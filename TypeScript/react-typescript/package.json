@@ -1,0 +1,23 @@
+{
+  "name": "react-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint --project"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/reach__router": "^1.3.1",
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.2.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
