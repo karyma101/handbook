@@ -7,7 +7,7 @@
 - `npx webpack --config webpack.config.js`
     - Can use config files with different names, by default it will use webpack.config.js
 
-## [Asset Management](./asset_management/webpack.config.js)
+## [Asset Management](./asset_management)
 
 - `npm i -D css-loader style-loader`
     - Dynamically creates `<style>` in your head with all your imported and bundled css.
@@ -19,7 +19,7 @@
 - `npm i -D csv-loader xml-loader`
     - Loading Data
 
-## [Output Management](./output_management/webpack.config.js)
+## [Output Management](./output_management)
 
 - `npm i -D html-webpack-plugin`
     - Automatically generates a new index.html file
@@ -28,7 +28,7 @@
 - `npm i -D clean-webpack-plugin`
     - Keeps the dist folder tidy
 
-## [Development](./development/webpack.config.js)
+## [Development](./development)
 
 - Source Maps
     - Allows us to track the origin of the error from the bundled file
@@ -37,9 +37,10 @@
 - `npm i -D webpack-dev-server`, `webpack-dev-server --open`
     - provides you with a simple web server and the ability to use live reloading
 
-## [Code Splitting](./code_splitting/webpack.config.js)
+## [Code Splitting](./code_splitting)
 
 - Three general approaches for code splitting
     - Entry points, manually split code using entry configuration
+        - If there are any duplicated modules between entry chunks they will be included in both bundles.
     - Prevent duplication, use the `SplitChunkPlugin` to dedupe and split chunks
     - Dynamic Imports, Split code via inline function calls within modules
