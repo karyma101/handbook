@@ -44,3 +44,8 @@
         - If there are any duplicated modules between entry chunks they will be included in both bundles.
     - Prevent duplication, use the `SplitChunkPlugin` to dedupe and split chunks
     - Dynamic Imports, Split code via inline function calls within modules
+
+## Caching
+
+- It is a good practice to extract third party libraries such as lodash and react to separate vendor chunk as they are less likely to change than our local source code.
+    - Done by using `cacheGroups`

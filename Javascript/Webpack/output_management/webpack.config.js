@@ -13,8 +13,8 @@ module.exports = {
         contentBase: './dist'
     },
     plugins: [
-        new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
-        new HtmlWebpackPlugin({
+        new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }), // Remove Dist Folder when rebundling
+        new HtmlWebpackPlugin({ // Creates an index.html template
         title: 'Output Management',
         }),
     ],
