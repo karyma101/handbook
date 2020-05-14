@@ -49,3 +49,20 @@
 
 - It is a good practice to extract third party libraries such as lodash and react to separate vendor chunk as they are less likely to change than our local source code.
     - Done by using `cacheGroups`
+
+## Build Performance
+
+- Using the include field to only apply the loader modules that actually need to be transformed by it
+- Each additional loader/plugin has a bootup time. Try to use as few tools as possible
+- The following steps can increase resolving speed:
+    - Minimize the number of items in resolve.modules, resolve.extensions, resolve.mainFiles, resolve.descriptionFiles, as they increase the number of filesystem calls.
+    - Set resolve.symlinks: false if you don't use symlinks (e.g. npm link or yarn link).
+    - Set resolve.cacheWithContext: false if you use custom resolving plugins, that are not context specific.
+- `Dllplugin` to move code that is changed less often into a separate compilation. This will improve the application's compilation speed but increases the complexity of the build process
+- Use fewer/smaller libraries
+- Use SplitChunkPlugins in Multi-Page Applications
+- Use the SplitChunksPlugin in async mode in Multi-Page Applications.
+- Remove unused code.
+- Only compile the part of the code you are currently developing on.
+- Enable persistent caching with the cache-loader. Clear cache directory on "postinstall" in package.json.
+- 
